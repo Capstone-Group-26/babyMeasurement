@@ -172,32 +172,6 @@
             </objects>
             <point key="canvasLocation" x="2047.826086956522" y="-374.33035714285711"/>
         </scene>
-        <!--ARHeightView Help-->
-        <scene sceneID="jRn-W0-BS9">
-            <objects>
-                <viewController title="ARHeightView Help" id="8my-ym-Gza" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="By4-Uc-Rn3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="1.                             " translatesAutoresizingMaskIntoConstraints="NO" id="VDa-td-PFC">
-                                <rect key="frame" x="20" y="112" width="374" height="126"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="HUA-hj-1jT"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Height Estimation Help" id="qTb-3k-CUb"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GRL-qg-1YY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1881" y="384"/>
-        </scene>
         <!--Information-->
         <scene sceneID="Bks-LN-hVh">
             <objects>
@@ -245,42 +219,6 @@
             </objects>
             <point key="canvasLocation" x="445" y="495"/>
         </scene>
-        <!--ARHeightView Scene-->
-        <scene sceneID="AT9-7w-O6a">
-            <objects>
-                <viewController title="ARHeightView Scene" id="6Fv-Yn-ZIK" customClass="ARHeightViewController" customModule="test2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Bla-od-zCX" customClass="ARSCNView">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SLP-3T-cS9">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                            </arscnView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="bMw-Po-hU9" firstAttribute="bottom" secondItem="SLP-3T-cS9" secondAttribute="bottom" id="Aa4-gi-hR0"/>
-                            <constraint firstItem="SLP-3T-cS9" firstAttribute="top" secondItem="bMw-Po-hU9" secondAttribute="top" id="MfG-3Y-UiO"/>
-                            <constraint firstItem="bMw-Po-hU9" firstAttribute="trailing" secondItem="SLP-3T-cS9" secondAttribute="trailing" id="YcB-yu-Jse"/>
-                            <constraint firstItem="SLP-3T-cS9" firstAttribute="leading" secondItem="bMw-Po-hU9" secondAttribute="leading" id="aaD-Ie-RXg"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="bMw-Po-hU9"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Height Estimation Mode" id="s1w-YM-Y9B">
-                        <barButtonItem key="rightBarButtonItem" image="questionmark" catalog="system" id="08X-KK-edb">
-                            <connections>
-                                <segue destination="8my-ym-Gza" kind="show" id="tKt-Co-Ak2"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="heightView" destination="SLP-3T-cS9" id="c06-Zx-a9A"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="udT-sb-7Yx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1111.5942028985507" y="383.70535714285711"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="ycd-qn-J4H">
             <objects>
@@ -319,22 +257,12 @@
                                     <segue destination="YD7-QS-xxw" kind="show" id="OWN-iG-cvl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLd-PB-c6d">
-                                <rect key="frame" x="20" y="430" width="187" height="98"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                <state key="normal" title="Estimate Height"/>
-                                <connections>
-                                    <segue destination="6Fv-Yn-ZIK" kind="show" id="Jsv-Tp-oE9"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3k-1A-gUh">
                                 <rect key="frame" x="20" y="547" width="374" height="122"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                <state key="normal" title="Visualizations"/>
+                                <state key="normal" title="View Visualizations"/>
                                 <connections>
                                     <segue destination="R8o-E5-SiW" kind="show" id="mLi-0a-jdp"/>
                                 </connections>
@@ -350,7 +278,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xl-B8-AK9">
-                                <rect key="frame" x="207" y="430" width="187" height="98"/>
+                                <rect key="frame" x="20" y="430" width="374" height="98"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
