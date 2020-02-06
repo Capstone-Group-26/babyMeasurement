@@ -243,13 +243,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BgC-So-uxm">
-                                <rect key="frame" x="0.0" y="88" width="414" height="243"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BgC-So-uxm">
+                                <rect key="frame" x="0.0" y="88" width="414" height="216"/>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eD-bB-91E">
-                                <rect key="frame" x="125" y="328" width="164" height="81"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eD-bB-91E">
+                                <rect key="frame" x="125" y="349" width="164" height="33"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <state key="normal" title="New Baby"/>
@@ -257,9 +255,8 @@
                                     <segue destination="YD7-QS-xxw" kind="show" id="OWN-iG-cvl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3k-1A-gUh">
-                                <rect key="frame" x="20" y="547" width="374" height="122"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3k-1A-gUh">
+                                <rect key="frame" x="20" y="455" width="374" height="33"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <state key="normal" title="View Visualizations"/>
@@ -267,9 +264,8 @@
                                     <segue destination="R8o-E5-SiW" kind="show" id="mLi-0a-jdp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hys-zn-GXy">
-                                <rect key="frame" x="20" y="690" width="374" height="122"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hys-zn-GXy">
+                                <rect key="frame" x="20" y="509" width="374" height="33"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <state key="normal" title="Information"/>
@@ -277,9 +273,8 @@
                                     <segue destination="VCk-YZ-MbA" kind="show" id="ybM-TT-wnB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xl-B8-AK9">
-                                <rect key="frame" x="20" y="430" width="374" height="98"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xl-B8-AK9">
+                                <rect key="frame" x="20" y="403" width="374" height="33"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <state key="normal" title="Free Measure"/>
@@ -289,6 +284,31 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="R3k-1A-gUh" firstAttribute="top" secondItem="3xl-B8-AK9" secondAttribute="bottom" constant="19" id="1Ik-W0-2oR"/>
+                            <constraint firstItem="hys-zn-GXy" firstAttribute="top" secondItem="R3k-1A-gUh" secondAttribute="bottom" constant="21" id="5OT-VQ-WJF"/>
+                            <constraint firstItem="9eD-bB-91E" firstAttribute="top" secondItem="BgC-So-uxm" secondAttribute="bottom" constant="45" id="7Ie-30-efI"/>
+                            <constraint firstItem="BgC-So-uxm" firstAttribute="trailing" secondItem="7Vb-Us-9ml" secondAttribute="trailing" id="8Gr-Jc-oCJ"/>
+                            <constraint firstItem="BgC-So-uxm" firstAttribute="leading" secondItem="7Vb-Us-9ml" secondAttribute="leading" id="9Nl-Iy-hM4"/>
+                            <constraint firstItem="R3k-1A-gUh" firstAttribute="top" secondItem="3xl-B8-AK9" secondAttribute="bottom" constant="19" id="AON-M2-Nlc"/>
+                            <constraint firstItem="7Vb-Us-9ml" firstAttribute="trailing" secondItem="hys-zn-GXy" secondAttribute="trailing" constant="20" id="O0t-ss-3wU"/>
+                            <constraint firstItem="BgC-So-uxm" firstAttribute="trailing" secondItem="7Vb-Us-9ml" secondAttribute="trailing" id="Pz7-Bi-cZJ"/>
+                            <constraint firstItem="BgC-So-uxm" firstAttribute="top" secondItem="7Vb-Us-9ml" secondAttribute="top" id="QDq-HT-sAD"/>
+                            <constraint firstItem="7Vb-Us-9ml" firstAttribute="trailing" secondItem="3xl-B8-AK9" secondAttribute="trailing" constant="20" id="SLO-dh-vOb"/>
+                            <constraint firstItem="R3k-1A-gUh" firstAttribute="leading" secondItem="7Vb-Us-9ml" secondAttribute="leading" constant="20" id="Tv8-rL-UtH"/>
+                            <constraint firstItem="9eD-bB-91E" firstAttribute="leading" secondItem="7Vb-Us-9ml" secondAttribute="leading" constant="125" id="Y4e-0R-26n"/>
+                            <constraint firstItem="3xl-B8-AK9" firstAttribute="top" secondItem="9eD-bB-91E" secondAttribute="bottom" constant="21" id="dug-PC-of3"/>
+                            <constraint firstItem="3xl-B8-AK9" firstAttribute="top" secondItem="BgC-So-uxm" secondAttribute="bottom" constant="99" id="eKK-6E-s9i"/>
+                            <constraint firstItem="7Vb-Us-9ml" firstAttribute="trailing" secondItem="R3k-1A-gUh" secondAttribute="trailing" constant="20" id="gmb-u2-MhO"/>
+                            <constraint firstItem="3xl-B8-AK9" firstAttribute="top" secondItem="9eD-bB-91E" secondAttribute="bottom" constant="21" id="nje-j6-GvW"/>
+                            <constraint firstItem="3xl-B8-AK9" firstAttribute="leading" secondItem="7Vb-Us-9ml" secondAttribute="leading" constant="20" id="pCj-HD-kUu"/>
+                            <constraint firstItem="hys-zn-GXy" firstAttribute="top" secondItem="R3k-1A-gUh" secondAttribute="bottom" constant="21" id="pIp-wr-g0x"/>
+                            <constraint firstItem="hys-zn-GXy" firstAttribute="leading" secondItem="7Vb-Us-9ml" secondAttribute="leading" constant="20" id="q2S-3B-1hI"/>
+                            <constraint firstItem="BgC-So-uxm" firstAttribute="leading" secondItem="7Vb-Us-9ml" secondAttribute="leading" id="rGu-tm-TZY"/>
+                            <constraint firstItem="3xl-B8-AK9" firstAttribute="top" secondItem="BgC-So-uxm" secondAttribute="bottom" constant="99" id="ugl-tv-jDs"/>
+                            <constraint firstItem="7Vb-Us-9ml" firstAttribute="trailing" secondItem="9eD-bB-91E" secondAttribute="trailing" constant="125" id="xwM-YJ-HzK"/>
+                            <constraint firstItem="3xl-B8-AK9" firstAttribute="top" secondItem="BgC-So-uxm" secondAttribute="bottom" constant="99" id="zCE-O6-civ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7Vb-Us-9ml"/>
                     </view>
                     <navigationItem key="navigationItem" title="Baby Body Measurement" id="dFX-to-DHY"/>
