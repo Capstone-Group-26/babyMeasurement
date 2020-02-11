@@ -10,9 +10,26 @@ import UIKit
 
 class NewProfileViewController: UIViewController {
     
+    @IBAction func FirstName(_ sender: Any) {
+    }
     
-
-
+    @IBAction func LastName(_ sender: Any) {
+    }
+    
+    @IBAction func DOBWheel(_ sender: Any) {
+    }
+    
+    @IBAction func BornHeight(_ sender: Any) {
+    }
+    
+    
+    @IBAction func BioSex(_ sender: Any) {
+    }
+    
+    @IBAction func SaveButton(_ sender: Any) {
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
