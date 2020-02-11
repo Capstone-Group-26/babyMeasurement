@@ -9,6 +9,9 @@
 import UIKit
 
 class NewProfileViewController: UIViewController {
+    
+    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
