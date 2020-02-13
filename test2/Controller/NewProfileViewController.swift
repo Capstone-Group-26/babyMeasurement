@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class NewProfileViewController: UIViewController {
     
@@ -26,14 +27,45 @@ class NewProfileViewController: UIViewController {
     @IBAction func BioSex(_ sender: Any) {
     }
     
-    @IBAction func SaveButton(_ sender: Any) {
-        print("Save Button pressed")
+    
+    @IBAction func saveButton(_ sender: Any) {
+        print("save button pressed")
+        saveTask{ (done) in
+            if done {
+                print("we need to return now")
+                // move view back to previous screen
+                navigationController?.popViewController(animated: true)
+                self.dismiss(animated: true, completion: nil)
+            } else {
+                print("try again")
+            }
+        }
+    }
+    
+    func saveTask(completion: (_ finished: Bool) -> ()){
+        guard let managedContext = appDelegate?.persistentContainer.viewContext else {
+            print("fail")
+            return
+        }
+        let newChild = Child(context: managedContext)
+        newChild.name = "test"
+        newChild.sex = "male"
+        newChild.birthHeight = 11.5
+        
+        //        task.taskDescription = taskTv.text
+//        newChild.taskStatus = false
+        do {
+            try managedContext.save()
+            print("data saved")
+            completion(true)
+        } catch {
+            print("failed ", error.localizedDescription)
+            completion(false)
+        }
     }
     
     override func viewDidLoad() {
-        print("test")
         super.viewDidLoad()
-        print("afterTest")
         // Do any additional setup after loading the view.
     }
     
