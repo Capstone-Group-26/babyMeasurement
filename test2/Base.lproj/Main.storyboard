@@ -10,7 +10,7 @@
         <!--NewProfile-->
         <scene sceneID="FaM-1G-noT">
             <objects>
-                <viewController title="NewProfile" id="YD7-QS-xxw" sceneMemberID="viewController">
+                <viewController title="NewProfile" id="YD7-QS-xxw" customClass="NewProfileViewController" customModule="test2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u5R-4M-9R0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -138,7 +138,7 @@
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
-                                    <action selector="SaveButton:" destination="mBb-u7-ft0" eventType="touchUpInside" id="au4-v3-vtY"/>
+                                    <action selector="SaveButton:" destination="mBb-u7-ft0" eventType="touchUpInside" id="Hev-l4-KAo"/>
                                 </connections>
                             </button>
                         </subviews>

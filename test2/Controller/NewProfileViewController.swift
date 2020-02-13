@@ -27,12 +27,13 @@ class NewProfileViewController: UIViewController {
     }
     
     @IBAction func SaveButton(_ sender: Any) {
+        print("Save Button pressed")
     }
     
-    
     override func viewDidLoad() {
+        print("test")
         super.viewDidLoad()
-
+        print("afterTest")
         // Do any additional setup after loading the view.
     }
     
