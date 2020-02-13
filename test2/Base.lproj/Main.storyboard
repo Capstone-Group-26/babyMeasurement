@@ -132,7 +132,7 @@
                                     <action selector="BioSex:" destination="mBb-u7-ft0" eventType="valueChanged" id="jpR-8t-e25"/>
                                 </connections>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27a-Ms-hdG">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27a-Ms-hdG" customClass="CustomB1" customModule="test2" customModuleProvider="target">
                                 <rect key="frame" x="126" y="756" width="163" height="66"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
@@ -296,14 +296,57 @@
                     <view key="view" contentMode="scaleToFill" id="qIC-Fn-eiE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXT-FL-O2m" customClass="CustomB1" customModule="test2" customModuleProvider="target">
+                                <rect key="frame" x="25" y="113" width="364" height="99"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Bar Chart - Height"/>
+                                <connections>
+                                    <segue destination="ViK-aZ-3su" kind="show" id="9tf-jR-fJA"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gXT-FL-O2m" firstAttribute="top" secondItem="B9Z-VM-aYS" secondAttribute="top" constant="25" id="006-cI-HwR"/>
+                            <constraint firstItem="gXT-FL-O2m" firstAttribute="leading" secondItem="B9Z-VM-aYS" secondAttribute="leading" constant="25" id="VEg-cj-WDp"/>
+                            <constraint firstItem="gXT-FL-O2m" firstAttribute="centerX" secondItem="qIC-Fn-eiE" secondAttribute="centerX" id="YJy-DZ-SKd"/>
+                            <constraint firstItem="B9Z-VM-aYS" firstAttribute="bottom" secondItem="gXT-FL-O2m" secondAttribute="bottom" constant="650" id="qFC-sv-cj9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="B9Z-VM-aYS"/>
                     </view>
                     <navigationItem key="navigationItem" title="Visualizations" id="sZs-S4-r3Y"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xgM-oW-GKQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="445" y="495"/>
+            <point key="canvasLocation" x="444.92753623188412" y="494.86607142857139"/>
+        </scene>
+        <!--Bar Chart-->
+        <scene sceneID="lVT-Qp-B6W">
+            <objects>
+                <viewController id="ViK-aZ-3su" customClass="BarChartViewController" customModule="test2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vfQ-by-vsq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Nu-A4-7W9" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="20" y="20" width="374" height="754"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82736033200000003" green="0.82750320430000002" blue="0.82735145089999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="63z-Om-CYw"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="Bar Chart" id="lvK-bw-Fhh"/>
+                    <connections>
+                        <outlet property="BarChartHeight" destination="9Nu-A4-7W9" id="V9w-30-pH8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ngC-nX-APu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1398.5507246376812" y="346.875"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ycd-qn-J4H">
@@ -332,7 +375,7 @@
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BgC-So-uxm" customClass="PickerView" customModule="test2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="222" width="414" height="233"/>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3RT-Nr-9zd">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3RT-Nr-9zd" customClass="CustomB2" customModule="test2" customModuleProvider="target">
                                 <rect key="frame" x="147" y="139" width="120" height="75"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -344,7 +387,7 @@
                                     <segue destination="YD7-QS-xxw" kind="show" id="mX2-Pu-B5x"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKf-w2-lQS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKf-w2-lQS" customClass="CustomB1" customModule="test2" customModuleProvider="target">
                                 <rect key="frame" x="30" y="591" width="364" height="99"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -356,7 +399,7 @@
                                     <segue destination="R8o-E5-SiW" kind="show" id="xJq-mX-jL6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxt-zo-XPm">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxt-zo-XPm" customClass="CustomB1" customModule="test2" customModuleProvider="target">
                                 <rect key="frame" x="30" y="717" width="364" height="99"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -368,7 +411,7 @@
                                     <segue destination="VCk-YZ-MbA" kind="show" id="v5a-SP-kh3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6T-CV-toO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6T-CV-toO" customClass="CustomB1" customModule="test2" customModuleProvider="target">
                                 <rect key="frame" x="30" y="463" width="364" height="99"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -404,6 +447,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Baby Body Measurement" id="dFX-to-DHY"/>
                     <connections>
+                        <outlet property="ChartsButton" destination="EKf-w2-lQS" id="Z7H-aF-xa5"/>
+                        <outlet property="InformationButton" destination="gxt-zo-XPm" id="GFr-35-L6J"/>
+                        <outlet property="MeasureButton" destination="Z6T-CV-toO" id="aQx-X7-ZuF"/>
+                        <outlet property="ProfileButton" destination="3RT-Nr-9zd" id="On0-4M-slD"/>
                         <outlet property="pv" destination="BgC-So-uxm" id="ES1-Bm-GVJ"/>
                     </connections>
                 </viewController>
@@ -415,4 +462,5 @@
     <resources>
         <image name="questionmark" catalog="system" width="48" height="64"/>
     </resources>
+    <color key="tintColor" red="0.25465512275695801" green="0.46983188390731812" blue="0.70866376161575317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

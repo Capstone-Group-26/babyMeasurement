@@ -13,7 +13,7 @@ class InformationViewController: UIViewController{
     
     
 
-    class picker: UIPickerView {
+    class picker: InformationViewController {
         
         @IBOutlet weak var InfoDateSelector: UIPickerView!
          

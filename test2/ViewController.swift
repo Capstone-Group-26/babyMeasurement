@@ -16,6 +16,13 @@ class ViewController: UIViewController{
     //outlets
     
     @IBOutlet weak var pv: UIPickerView!
+    
+    @IBOutlet weak var MeasureButton: UIButton!
+    @IBOutlet weak var ChartsButton: UIButton!
+    @IBOutlet weak var InformationButton: UIButton!
+    @IBOutlet weak var ProfileButton: UIButton!
+    
+    
     //variable
     var pickerData: [String] = [String]()
     
