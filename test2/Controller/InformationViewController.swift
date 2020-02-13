@@ -8,12 +8,24 @@
 
 import UIKit
 
-class InformationViewController: UIViewController {
+class InformationViewController: UIViewController{
+    
+    
+    
 
+    class picker: UIPickerView {
+        
+        @IBOutlet weak var InfoDateSelector: UIPickerView!
+         
+    
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+
     }
     
 

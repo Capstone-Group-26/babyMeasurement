@@ -210,7 +210,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EEw-rK-xSR">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                             </arscnView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -242,7 +242,7 @@
             <objects>
                 <viewController title="ARView Help" id="AH0-Oe-Ww4" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FiW-AY-1LR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="1.                             " translatesAutoresizingMaskIntoConstraints="NO" id="95Z-bj-dEa">
@@ -275,18 +275,12 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="243"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </pickerView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Cwy-2s-kdp">
-                                <rect key="frame" x="87" y="456" width="240" height="275"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">Aidan, I thought this picker view could grab all dates that a measurement was taken and display the dates. Then we'll display the height on that date. Then we can deduce how long it's been since birth and pop up those numbers along with information from WHO. ---- you can delete after reading.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Ec4-8y-2iO"/>
+                        <connections>
+                            <outlet property="InfoDateSelector" destination="YLU-zk-hJ8" id="bBb-Dy-JqY"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Information" id="TuV-xE-1mE"/>
                 </viewController>
@@ -360,6 +354,9 @@
                                     <constraint firstAttribute="height" constant="99" id="oZe-mw-735"/>
                                 </constraints>
                                 <state key="normal" title="View Charts"/>
+                                <connections>
+                                    <segue destination="R8o-E5-SiW" kind="show" id="xJq-mX-jL6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxt-zo-XPm">
                                 <rect key="frame" x="30" y="717" width="364" height="99"/>
@@ -369,6 +366,9 @@
                                     <constraint firstAttribute="width" secondItem="gxt-zo-XPm" secondAttribute="height" multiplier="364:99" id="pYz-6H-nah"/>
                                 </constraints>
                                 <state key="normal" title="Health Information"/>
+                                <connections>
+                                    <segue destination="VCk-YZ-MbA" kind="show" id="v5a-SP-kh3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6T-CV-toO">
                                 <rect key="frame" x="30" y="463" width="364" height="99"/>
@@ -378,6 +378,9 @@
                                     <constraint firstAttribute="height" constant="99" id="bJt-Zz-MXA"/>
                                 </constraints>
                                 <state key="normal" title="Take Measurement"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="nWK-l8-5ia"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
