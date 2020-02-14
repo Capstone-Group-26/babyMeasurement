@@ -11,22 +11,16 @@ import CoreData
 
 class NewProfileViewController: UIViewController {
     
-    @IBAction func FirstName(_ sender: Any) {
-    }
     
-    @IBAction func LastName(_ sender: Any) {
-    }
+    @IBOutlet weak var firstName: UITextField!
     
-    @IBAction func DOBWheel(_ sender: Any) {
-    }
+    @IBOutlet weak var lastName: UITextField!
     
-    @IBAction func BornHeight(_ sender: Any) {
-    }
+    @IBOutlet weak var DOB: UIDatePicker!
     
+    @IBOutlet weak var bornHeight: UITextField!
     
-    @IBAction func BioSex(_ sender: Any) {
-    }
-    
+    @IBOutlet weak var bioSex: UISegmentedControl!
     
     @IBAction func saveButton(_ sender: Any) {
         print("save button pressed")
@@ -47,13 +41,32 @@ class NewProfileViewController: UIViewController {
             print("fail")
             return
         }
-        let newChild = Child(context: managedContext)
-        newChild.name = "test"
-        newChild.sex = "male"
-        newChild.birthHeight = 11.5
         
-        //        task.taskDescription = taskTv.text
-//        newChild.taskStatus = false
+        if (firstName.text?.isEmpty ?? true) {
+            print("firstName is empty")
+            return
+        }
+        
+        if (lastName.text?.isEmpty ?? true) {
+            print("lastName is empty")
+            return
+        }
+        
+        if (bornHeight.text?.isEmpty ?? true) {
+            print("bornHeight is empty")
+            return
+        }
+        
+        let newChild = Child(context: managedContext)
+        
+        newChild.name = firstName.text!+" "+lastName.text!
+        
+        newChild.sex = bioSex.titleForSegment(at: bioSex.selectedSegmentIndex)
+        
+        newChild.birthHeight = Double(bornHeight.text!)!
+        
+        newChild.birthDate = DOB.date
+
         do {
             try managedContext.save()
             print("data saved")

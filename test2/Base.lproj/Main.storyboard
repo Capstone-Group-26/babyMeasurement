@@ -20,7 +20,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.0" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="given-name"/>
                                 <connections>
                                     <action selector="FirstName:" destination="mBb-u7-ft0" eventType="editingDidEnd" id="ESl-pJ-48J"/>
                                 </connections>
@@ -30,12 +30,12 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.0" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
                                     <action selector="BornHeight:" destination="mBb-u7-ft0" eventType="editingDidEnd" id="X6a-4N-oO1"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" First" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cnw-9s-XNh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" First" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cnw-9s-XNh" userLabel="First">
                                 <rect key="frame" x="20" y="185" width="46" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="27" id="0Yz-bf-YRb"/>
@@ -107,7 +107,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.0" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="family-name"/>
                                 <connections>
                                     <action selector="LastName:" destination="mBb-u7-ft0" eventType="editingDidEnd" id="0a4-LW-EiZ"/>
                                 </connections>
@@ -196,6 +196,13 @@
                         <viewLayoutGuide key="safeArea" id="qgQ-et-031"/>
                     </view>
                     <navigationItem key="navigationItem" title="Profile Creation" id="O8w-ht-YuB"/>
+                    <connections>
+                        <outlet property="DOB" destination="eG7-rt-nqT" id="ISZ-uw-dnF"/>
+                        <outlet property="bioSex" destination="gY8-w8-cWQ" id="en6-9w-yCN"/>
+                        <outlet property="bornHeight" destination="bJv-g2-M4r" id="MeC-Cx-awF"/>
+                        <outlet property="firstName" destination="sxX-Sz-aUk" id="WiK-5C-w3P"/>
+                        <outlet property="lastName" destination="eh3-6H-paF" id="mch-l2-7mB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qcv-cj-teK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="mBb-u7-ft0" userLabel="Exit" sceneMemberID="exit"/>
