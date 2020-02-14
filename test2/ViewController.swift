@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 // Global Variables
 let appDelegate = UIApplication.shared.delegate as? AppDelegate
@@ -17,6 +18,7 @@ class ViewController: UIViewController{
     
     @IBOutlet weak var pv: UIPickerView!
     //variable
+    var childList = [Child]()
     var pickerData: [String] = [String]()
     
     //constants
@@ -29,7 +31,21 @@ class ViewController: UIViewController{
         callDelegates()
         pickerData = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6"]
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        fetchData{(done) in
+            if done {
+                print("Data is ready to be used in tableview")
+                if childList.count > 0 {
+                    pv.isHidden = false
+                } else {
+                    pv.isHidden = true
+                }
+            }
+        }
+        pv.reloadAllComponents()
+    }
+    
     func callDelegates(){
         pv.delegate = self
         pv.dataSource = self
@@ -43,25 +59,35 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerData.count
+        return childList.count
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return pickerData[row]
+        return childList[row].name
     }
+    // Capture the picker view selection
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        print("row: ", row)
+        // This method is triggered whenever the user makes a change to the picker selection.
+        // The parameter named row and component represents what was selected.
+    }
+}
+extension ViewController {
+    func fetchData(completion: (_ complete: Bool) -> ()){
+        guard let managedContext = appDelegate?.persistentContainer.viewContext else {
+            print("fail")
+            return
+        }
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Child")
+        do {
+            childList = try managedContext.fetch(request) as! [Child]
+            print("data fetched, no issues")
+            completion(true)
+        } catch {
+            print("unable to fetch data: ", error.localizedDescription)
+            completion(false)
+        }
+        
     
+    }
 }
 
-
-//extension ViewController: UITableViewDataSource, UITableViewDelegate {
-//    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 2
-//    }
-//
-//    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: cellid, for: indexPath) as! TableViewCell
-//        cell.TaskLabel.text = "hello"
-//        return cell
-//    }
-//
-//
-//}
