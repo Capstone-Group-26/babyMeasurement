@@ -19,17 +19,13 @@ class ViewController: UIViewController{
     @IBOutlet weak var pv: UIPickerView!
     //variable
     var childList = [Child]()
-    var pickerData: [String] = [String]()
     
     //constants
-//    let cellid = "CellID"
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         callDelegates()
-        pickerData = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6"]
     }
     
     override func viewWillAppear(_ animated: Bool) {
