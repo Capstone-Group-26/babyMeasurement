@@ -19,7 +19,6 @@
 		A649123523E36A5600D8E43E /* test2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A649123423E36A5600D8E43E /* test2UITests.swift */; };
 		A649124423E36B4500D8E43E /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A649124323E36B4500D8E43E /* ARViewController.swift */; };
 		A649124723E36E3200D8E43E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A649124623E36E3200D8E43E /* TableViewCell.swift */; };
-		A64E91A423E9D6E100CBB1CF /* ARHeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E91A323E9D6E100CBB1CF /* ARHeightViewController.swift */; };
 		A64E91A623E9E8AC00CBB1CF /* NewProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E91A523E9E8AC00CBB1CF /* NewProfileViewController.swift */; };
 		A64E91A823E9F9EF00CBB1CF /* VisualizationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E91A723E9F9EF00CBB1CF /* VisualizationsViewController.swift */; };
 		A64E91AA23E9F9FC00CBB1CF /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E91A923E9F9FC00CBB1CF /* InformationViewController.swift */; };
@@ -61,7 +60,6 @@
 		A649123623E36A5600D8E43E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A649124323E36B4500D8E43E /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		A649124623E36E3200D8E43E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		A64E91A323E9D6E100CBB1CF /* ARHeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARHeightViewController.swift; sourceTree = "<group>"; };
 		A64E91A523E9E8AC00CBB1CF /* NewProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProfileViewController.swift; sourceTree = "<group>"; };
 		A64E91A723E9F9EF00CBB1CF /* VisualizationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizationsViewController.swift; sourceTree = "<group>"; };
 		A64E91A923E9F9FC00CBB1CF /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
@@ -151,7 +149,6 @@
 			children = (
 				A649121323E36A5500D8E43E /* ViewController.swift */,
 				A649124323E36B4500D8E43E /* ARViewController.swift */,
-				A64E91A323E9D6E100CBB1CF /* ARHeightViewController.swift */,
 				A64E91A523E9E8AC00CBB1CF /* NewProfileViewController.swift */,
 				A64E91A723E9F9EF00CBB1CF /* VisualizationsViewController.swift */,
 				A64E91A923E9F9FC00CBB1CF /* InformationViewController.swift */,
@@ -303,7 +300,6 @@
 				A649121423E36A5500D8E43E /* ViewController.swift in Sources */,
 				A649121023E36A5500D8E43E /* AppDelegate.swift in Sources */,
 				A64E91A623E9E8AC00CBB1CF /* NewProfileViewController.swift in Sources */,
-				A64E91A423E9D6E100CBB1CF /* ARHeightViewController.swift in Sources */,
 				2D765F8723F53EDD00E226BD /* PickerView.swift in Sources */,
 				A649124723E36E3200D8E43E /* TableViewCell.swift in Sources */,
 				A649121223E36A5500D8E43E /* SceneDelegate.swift in Sources */,
@@ -483,13 +479,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 69P9HQ796Q;
+				DEVELOPMENT_TEAM = BBSC5UTQL2;
 				INFOPLIST_FILE = test2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = BBM.test2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BBM.babyMeasurement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -501,13 +497,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 69P9HQ796Q;
+				DEVELOPMENT_TEAM = BBSC5UTQL2;
 				INFOPLIST_FILE = test2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = BBM.test2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BBM.babyMeasurement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

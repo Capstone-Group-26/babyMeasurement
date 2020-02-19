@@ -22,6 +22,10 @@ class NewProfileViewController: UIViewController {
     
     @IBOutlet weak var bioSex: UISegmentedControl!
     
+    @IBAction func done(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    
     @IBAction func saveButton(_ sender: Any) {
         print("save button pressed")
         saveTask{ (done) in
@@ -79,6 +83,7 @@ class NewProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
     }
     

@@ -54,10 +54,12 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     
     var dotNodes = [SCNNode]()
     var textNode = SCNNode()
+    var recievedString:String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let test = recievedString
         // Set the view's delegate
         sceneView.delegate = self
         sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]

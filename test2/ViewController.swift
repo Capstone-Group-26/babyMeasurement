@@ -46,6 +46,17 @@ class ViewController: UIViewController{
         pv.delegate = self
         pv.dataSource = self
     }
+    
+    // This function is called before the segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+        // get a reference to the second view controller
+        if segue.destination is ARViewController {
+            // set a variable in the second view controller with the String to pass
+            let vc = segue.destination as? ARViewController
+            vc?.recievedString = "test text"
+        }
+    }
 
 }
 
