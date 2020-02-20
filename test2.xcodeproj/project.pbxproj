@@ -19,15 +19,9 @@
 		A649123523E36A5600D8E43E /* test2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A649123423E36A5600D8E43E /* test2UITests.swift */; };
 		A649124423E36B4500D8E43E /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A649124323E36B4500D8E43E /* ARViewController.swift */; };
 		A649124723E36E3200D8E43E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A649124623E36E3200D8E43E /* TableViewCell.swift */; };
-		A64E91A423E9D6E100CBB1CF /* ARHeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E91A323E9D6E100CBB1CF /* ARHeightViewController.swift */; };
 		A64E91A623E9E8AC00CBB1CF /* NewProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E91A523E9E8AC00CBB1CF /* NewProfileViewController.swift */; };
 		A64E91A823E9F9EF00CBB1CF /* VisualizationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E91A723E9F9EF00CBB1CF /* VisualizationsViewController.swift */; };
 		A64E91AA23E9F9FC00CBB1CF /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E91A923E9F9FC00CBB1CF /* InformationViewController.swift */; };
-		A6C8F49E23F5CECD006F7CC6 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C8F49D23F5CECD006F7CC6 /* BarChartViewController.swift */; };
-		A6DAB59323F5B8AE005E891C /* MenuLargeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DAB59223F5B8AE005E891C /* MenuLargeFont.swift */; };
-		A6DAB59523F5C07A005E891C /* MenuSmallFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DAB59423F5C07A005E891C /* MenuSmallFont.swift */; };
-		A6DAB5A023F5C5CB005E891C /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6DAB59C23F5C548005E891C /* Charts.framework */; };
-		A6DAB5A123F5C5CB005E891C /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A6DAB59C23F5C548005E891C /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,35 +39,7 @@
 			remoteGlobalIDString = A649120B23E36A5500D8E43E;
 			remoteInfo = test2;
 		};
-		A6DAB59B23F5C548005E891C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A6DAB59623F5C548005E891C /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
-			remoteInfo = Charts;
-		};
-		A6DAB59D23F5C548005E891C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A6DAB59623F5C548005E891C /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
-			remoteInfo = ChartsTests;
-		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		A6DAB5A223F5C5CB005E891C /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				A6DAB5A123F5C5CB005E891C /* Charts.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2D765F8623F53EDD00E226BD /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
@@ -94,14 +60,9 @@
 		A649123623E36A5600D8E43E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A649124323E36B4500D8E43E /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		A649124623E36E3200D8E43E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		A64E91A323E9D6E100CBB1CF /* ARHeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARHeightViewController.swift; sourceTree = "<group>"; };
 		A64E91A523E9E8AC00CBB1CF /* NewProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProfileViewController.swift; sourceTree = "<group>"; };
 		A64E91A723E9F9EF00CBB1CF /* VisualizationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizationsViewController.swift; sourceTree = "<group>"; };
 		A64E91A923E9F9FC00CBB1CF /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
-		A6C8F49D23F5CECD006F7CC6 /* BarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
-		A6DAB59223F5B8AE005E891C /* MenuLargeFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuLargeFont.swift; sourceTree = "<group>"; };
-		A6DAB59423F5C07A005E891C /* MenuSmallFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSmallFont.swift; sourceTree = "<group>"; };
-		A6DAB59623F5C548005E891C /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Downloads/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +70,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6DAB5A023F5C5CB005E891C /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,12 +93,10 @@
 		A649120323E36A5400D8E43E = {
 			isa = PBXGroup;
 			children = (
-				A6DAB59623F5C548005E891C /* Charts.xcodeproj */,
 				A649120E23E36A5500D8E43E /* test2 */,
 				A649122823E36A5600D8E43E /* test2Tests */,
 				A649123323E36A5600D8E43E /* test2UITests */,
 				A649120D23E36A5500D8E43E /* Products */,
-				A6DAB59F23F5C5CB005E891C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,9 +113,8 @@
 		A649120E23E36A5500D8E43E /* test2 */ = {
 			isa = PBXGroup;
 			children = (
-				A6DAB59123F5B857005E891C /* Custom Buttons */,
 				A649124523E36D2100D8E43E /* View */,
-				A649124223E36B1000D8E43E /* Controllers */,
+				A649124223E36B1000D8E43E /* Controller */,
 				A649120F23E36A5500D8E43E /* AppDelegate.swift */,
 				A649121123E36A5500D8E43E /* SceneDelegate.swift */,
 				A649121523E36A5500D8E43E /* Main.storyboard */,
@@ -187,18 +144,16 @@
 			path = test2UITests;
 			sourceTree = "<group>";
 		};
-		A649124223E36B1000D8E43E /* Controllers */ = {
+		A649124223E36B1000D8E43E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A6DAB5A523F5CA16005E891C /* Charts */,
 				A649121323E36A5500D8E43E /* ViewController.swift */,
 				A649124323E36B4500D8E43E /* ARViewController.swift */,
-				A64E91A323E9D6E100CBB1CF /* ARHeightViewController.swift */,
 				A64E91A523E9E8AC00CBB1CF /* NewProfileViewController.swift */,
 				A64E91A723E9F9EF00CBB1CF /* VisualizationsViewController.swift */,
 				A64E91A923E9F9FC00CBB1CF /* InformationViewController.swift */,
 			);
-			path = Controllers;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		A649124523E36D2100D8E43E /* View */ = {
@@ -208,39 +163,6 @@
 				2D765F8623F53EDD00E226BD /* PickerView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		A6DAB59123F5B857005E891C /* Custom Buttons */ = {
-			isa = PBXGroup;
-			children = (
-				A6DAB59223F5B8AE005E891C /* MenuLargeFont.swift */,
-				A6DAB59423F5C07A005E891C /* MenuSmallFont.swift */,
-			);
-			path = "Custom Buttons";
-			sourceTree = "<group>";
-		};
-		A6DAB59723F5C548005E891C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A6DAB59C23F5C548005E891C /* Charts.framework */,
-				A6DAB59E23F5C548005E891C /* ChartsTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A6DAB59F23F5C5CB005E891C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A6DAB5A523F5CA16005E891C /* Charts */ = {
-			isa = PBXGroup;
-			children = (
-				A6C8F49D23F5CECD006F7CC6 /* BarChartViewController.swift */,
-			);
-			path = Charts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,7 +175,6 @@
 				A649120823E36A5500D8E43E /* Sources */,
 				A649120923E36A5500D8E43E /* Frameworks */,
 				A649120A23E36A5500D8E43E /* Resources */,
-				A6DAB5A223F5C5CB005E891C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -334,12 +255,6 @@
 			mainGroup = A649120323E36A5400D8E43E;
 			productRefGroup = A649120D23E36A5500D8E43E /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = A6DAB59723F5C548005E891C /* Products */;
-					ProjectRef = A6DAB59623F5C548005E891C /* Charts.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				A649120B23E36A5500D8E43E /* test2 */,
@@ -348,23 +263,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		A6DAB59C23F5C548005E891C /* Charts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Charts.framework;
-			remoteRef = A6DAB59B23F5C548005E891C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A6DAB59E23F5C548005E891C /* ChartsTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ChartsTests.xctest;
-			remoteRef = A6DAB59D23F5C548005E891C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A649120A23E36A5500D8E43E /* Resources */ = {
@@ -401,17 +299,13 @@
 				A649121A23E36A5500D8E43E /* test2.xcdatamodeld in Sources */,
 				A649121423E36A5500D8E43E /* ViewController.swift in Sources */,
 				A649121023E36A5500D8E43E /* AppDelegate.swift in Sources */,
-				A6C8F49E23F5CECD006F7CC6 /* BarChartViewController.swift in Sources */,
-				A6DAB59523F5C07A005E891C /* MenuSmallFont.swift in Sources */,
 				A64E91A623E9E8AC00CBB1CF /* NewProfileViewController.swift in Sources */,
-				A64E91A423E9D6E100CBB1CF /* ARHeightViewController.swift in Sources */,
 				2D765F8723F53EDD00E226BD /* PickerView.swift in Sources */,
 				A649124723E36E3200D8E43E /* TableViewCell.swift in Sources */,
 				A649121223E36A5500D8E43E /* SceneDelegate.swift in Sources */,
 				A649124423E36B4500D8E43E /* ARViewController.swift in Sources */,
 				A64E91A823E9F9EF00CBB1CF /* VisualizationsViewController.swift in Sources */,
 				A64E91AA23E9F9FC00CBB1CF /* InformationViewController.swift in Sources */,
-				A6DAB59323F5B8AE005E891C /* MenuLargeFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,13 +479,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 69P9HQ796Q;
+				DEVELOPMENT_TEAM = BBSC5UTQL2;
 				INFOPLIST_FILE = test2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = BBM.test2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BBM.babyMeasurement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -603,13 +497,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 69P9HQ796Q;
+				DEVELOPMENT_TEAM = BBSC5UTQL2;
 				INFOPLIST_FILE = test2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = BBM.test2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BBM.babyMeasurement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

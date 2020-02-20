@@ -11,26 +11,24 @@ import CoreData
 
 class NewProfileViewController: UIViewController {
     
-    @IBAction func FirstName(_ sender: Any) {
+    //outlets
+    @IBOutlet weak var firstName: UITextField!
+    
+    @IBOutlet weak var lastName: UITextField!
+    
+    @IBOutlet weak var DOB: UIDatePicker!
+    
+    @IBOutlet weak var bornHeight: UITextField!
+    
+    @IBOutlet weak var bioSex: UISegmentedControl!
+    
+    @IBAction func done(_ sender: UITextField) {
+        sender.resignFirstResponder()
     }
-    
-    @IBAction func LastName(_ sender: Any) {
-    }
-    
-    @IBAction func DOBWheel(_ sender: Any) {
-    }
-    
-    @IBAction func BornHeight(_ sender: Any) {
-    }
-    
-    
-    @IBAction func BioSex(_ sender: Any) {
-    }
-    
     
     @IBAction func saveButton(_ sender: Any) {
         print("save button pressed")
-        saveTask{ (done) in
+        saveChild{ (done) in
             if done {
                 print("we need to return now")
                 // move view back to previous screen
@@ -42,18 +40,37 @@ class NewProfileViewController: UIViewController {
         }
     }
     
-    func saveTask(completion: (_ finished: Bool) -> ()){
+    func saveChild(completion: (_ finished: Bool) -> ()){
         guard let managedContext = appDelegate?.persistentContainer.viewContext else {
             print("fail")
             return
         }
-        let newChild = Child(context: managedContext)
-        newChild.name = "test"
-        newChild.sex = "male"
-        newChild.birthHeight = 11.5
         
-        //        task.taskDescription = taskTv.text
-//        newChild.taskStatus = false
+        if (firstName.text?.isEmpty ?? true) {
+            print("firstName is empty")
+            return
+        }
+        
+        if (lastName.text?.isEmpty ?? true) {
+            print("lastName is empty")
+            return
+        }
+        
+        if (bornHeight.text?.isEmpty ?? true) {
+            print("bornHeight is empty")
+            return
+        }
+        
+        let newChild = Child(context: managedContext)
+        
+        newChild.name = firstName.text!+" "+lastName.text!
+        
+        newChild.sex = bioSex.titleForSegment(at: bioSex.selectedSegmentIndex)
+        
+        newChild.birthHeight = Double(bornHeight.text!)!
+        
+        newChild.birthDate = DOB.date
+
         do {
             try managedContext.save()
             print("data saved")
@@ -66,6 +83,7 @@ class NewProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
     }
     
