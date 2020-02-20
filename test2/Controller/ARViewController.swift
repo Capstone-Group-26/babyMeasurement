@@ -47,6 +47,7 @@ class ARViewController: UIViewController {
 import UIKit
 import SceneKit
 import ARKit
+import CoreData
 
 class ARViewController: UIViewController, ARSCNViewDelegate {
     
@@ -54,12 +55,14 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     
     var dotNodes = [SCNNode]()
     var textNode = SCNNode()
-    var recievedString:String = ""
+    var recievedChild:Child? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let test = recievedString
+        let test = recievedChild
+        print(test?.name ?? "Child passed in was null")
+        
         // Set the view's delegate
         sceneView.delegate = self
         sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]

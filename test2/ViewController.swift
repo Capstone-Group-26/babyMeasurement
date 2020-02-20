@@ -17,8 +17,10 @@ class ViewController: UIViewController{
     //outlets
     
     @IBOutlet weak var pv: UIPickerView!
+    
     //variable
     var childList = [Child]()
+    var currentChild:Child? = nil
     
     //constants
     
@@ -54,7 +56,7 @@ class ViewController: UIViewController{
         if segue.destination is ARViewController {
             // set a variable in the second view controller with the String to pass
             let vc = segue.destination as? ARViewController
-            vc?.recievedString = "test text"
+            vc?.recievedChild = currentChild
         }
     }
 
@@ -73,14 +75,17 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     // Capture the picker view selection
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        // This method is triggered whenever the user makes a change to the picker selection.
+        // The parameter named row and component represents what was selected.
         print("row: ", row)
         print(childList[row].name!, childList[row].sex!,
             childList[row].birthHeight,
             childList[row].birthDate!)
-        // This method is triggered whenever the user makes a change to the picker selection.
-        // The parameter named row and component represents what was selected.
+        
+        currentChild = childList[row]
     }
 }
+
 extension ViewController {
     func fetchData(completion: (_ complete: Bool) -> ()){
         guard let managedContext = appDelegate?.persistentContainer.viewContext else {
@@ -88,6 +93,8 @@ extension ViewController {
             return
         }
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Child")
+        
+        // try to get list of created children from database
         do {
             childList = try managedContext.fetch(request) as! [Child]
             print("data fetched, no issues")
@@ -97,7 +104,10 @@ extension ViewController {
             completion(false)
         }
         
-    
+        // set current selected child to the first in list
+        if childList.count > 0 {
+            currentChild = childList[0]
+        }
     }
 }
 
