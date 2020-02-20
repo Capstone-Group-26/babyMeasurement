@@ -15,10 +15,9 @@ let appDelegate = UIApplication.shared.delegate as? AppDelegate
 class ViewController: UIViewController{
     
     //outlets
-    
     @IBOutlet weak var pv: UIPickerView!
     
-    //variable
+    //variables
     var childList = [Child]()
     var currentChild:Child? = nil
     

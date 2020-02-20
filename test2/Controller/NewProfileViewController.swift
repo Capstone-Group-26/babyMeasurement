@@ -11,7 +11,7 @@ import CoreData
 
 class NewProfileViewController: UIViewController {
     
-    
+    //outlets
     @IBOutlet weak var firstName: UITextField!
     
     @IBOutlet weak var lastName: UITextField!
@@ -28,7 +28,7 @@ class NewProfileViewController: UIViewController {
     
     @IBAction func saveButton(_ sender: Any) {
         print("save button pressed")
-        saveTask{ (done) in
+        saveChild{ (done) in
             if done {
                 print("we need to return now")
                 // move view back to previous screen
@@ -40,7 +40,7 @@ class NewProfileViewController: UIViewController {
         }
     }
     
-    func saveTask(completion: (_ finished: Bool) -> ()){
+    func saveChild(completion: (_ finished: Bool) -> ()){
         guard let managedContext = appDelegate?.persistentContainer.viewContext else {
             print("fail")
             return

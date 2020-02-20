@@ -51,11 +51,28 @@ import CoreData
 
 class ARViewController: UIViewController, ARSCNViewDelegate {
     
+    //outlets
     @IBOutlet var sceneView: ARSCNView!
     
+    @IBAction func SaveButtonPressed(_ sender: Any) {
+        print("save button pressed")
+        saveChild{ (done) in
+            if done {
+                print("we need to return now")
+                // move view back to previous screen
+                navigationController?.popViewController(animated: true)
+                self.dismiss(animated: true, completion: nil)
+            } else {
+                print("try again")
+            }
+        }
+    }
+    
+    //variables
     var dotNodes = [SCNNode]()
     var textNode = SCNNode()
     var recievedChild:Child? = nil
+    var distance:Double? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -131,14 +148,15 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         print(start.position)
         print(end.position)
         
-        let distance = sqrt(
-            pow(end.position.x - start.position.x, 2) +
-            pow(end.position.y - start.position.y, 2) +
-            pow(end.position.z - start.position.z, 2)
+        let tempD = Double(
+            sqrt(
+                pow(end.position.x - start.position.x, 2) +
+                pow(end.position.y - start.position.y, 2) +
+                pow(end.position.z - start.position.z, 2)
+            )
         )
-        
-        updateText(text: "\(abs(distance))", atPosition: end.position)
-        
+        distance = tempD
+        updateText(text: "\(abs(tempD))", atPosition: end.position)
     }
     
     func updateText(text: String, atPosition position: SCNVector3){
@@ -155,7 +173,24 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         
     }
     
-    @IBAction func SaveButtonPressed(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
+    func saveChild(completion: (_ finished: Bool) -> ()){
+        guard let managedContext = appDelegate?.persistentContainer.viewContext else {
+            print("fail")
+            return
+        }
+        let newMeasurement = Measurement(context: managedContext)
+        newMeasurement.height = distance!
+
+        newMeasurement.child = recievedChild
+        
+        do {
+            try managedContext.save()
+            print("data saved")
+            completion(true)
+        } catch {
+            print("failed ", error.localizedDescription)
+            completion(false)
+        }
+        print(recievedChild?.measurements! ?? "measurements list failed")
     }
 }
