@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2D765F8723F53EDD00E226BD /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D765F8623F53EDD00E226BD /* PickerView.swift */; };
+		A6190E7B23FEFADE0004BD95 /* MenuLargeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6190E7A23FEFADE0004BD95 /* MenuLargeFont.swift */; };
+		A6190E7D23FEFB100004BD95 /* MenuSmallFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6190E7C23FEFB100004BD95 /* MenuSmallFont.swift */; };
+		A6190E8823FEFBC70004BD95 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6190E8423FEFB7A0004BD95 /* Charts.framework */; };
+		A6190E8923FEFBC70004BD95 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A6190E8423FEFB7A0004BD95 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A6190E8D23FEFE7D0004BD95 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6190E8C23FEFE7D0004BD95 /* BarChartViewController.swift */; };
 		A649121023E36A5500D8E43E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A649120F23E36A5500D8E43E /* AppDelegate.swift */; };
 		A649121223E36A5500D8E43E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A649121123E36A5500D8E43E /* SceneDelegate.swift */; };
 		A649121423E36A5500D8E43E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A649121323E36A5500D8E43E /* ViewController.swift */; };
@@ -22,9 +27,24 @@
 		A64E91A623E9E8AC00CBB1CF /* NewProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E91A523E9E8AC00CBB1CF /* NewProfileViewController.swift */; };
 		A64E91A823E9F9EF00CBB1CF /* VisualizationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E91A723E9F9EF00CBB1CF /* VisualizationsViewController.swift */; };
 		A64E91AA23E9F9FC00CBB1CF /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E91A923E9F9FC00CBB1CF /* InformationViewController.swift */; };
+		A6A389C523FF4B16003BD693 /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A389C423FF4B16003BD693 /* LineChartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A6190E8323FEFB7A0004BD95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6190E7E23FEFB7A0004BD95 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		A6190E8523FEFB7A0004BD95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6190E7E23FEFB7A0004BD95 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
 		A649122623E36A5600D8E43E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A649120423E36A5400D8E43E /* Project object */;
@@ -41,8 +61,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A6190E8A23FEFBC70004BD95 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A6190E8923FEFBC70004BD95 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2D765F8623F53EDD00E226BD /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		A6190E7A23FEFADE0004BD95 /* MenuLargeFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuLargeFont.swift; sourceTree = "<group>"; };
+		A6190E7C23FEFB100004BD95 /* MenuSmallFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSmallFont.swift; sourceTree = "<group>"; };
+		A6190E7E23FEFB7A0004BD95 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Downloads/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
+		A6190E8C23FEFE7D0004BD95 /* BarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
 		A649120C23E36A5500D8E43E /* test2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A649120F23E36A5500D8E43E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A649121123E36A5500D8E43E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +101,7 @@
 		A64E91A523E9E8AC00CBB1CF /* NewProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProfileViewController.swift; sourceTree = "<group>"; };
 		A64E91A723E9F9EF00CBB1CF /* VisualizationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualizationsViewController.swift; sourceTree = "<group>"; };
 		A64E91A923E9F9FC00CBB1CF /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		A6A389C423FF4B16003BD693 /* LineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6190E8823FEFBC70004BD95 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,13 +130,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A6190E7923FEFA640004BD95 /* Custom Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				A6190E7A23FEFADE0004BD95 /* MenuLargeFont.swift */,
+				A6190E7C23FEFB100004BD95 /* MenuSmallFont.swift */,
+			);
+			path = "Custom Buttons";
+			sourceTree = "<group>";
+		};
+		A6190E7F23FEFB7A0004BD95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6190E8423FEFB7A0004BD95 /* Charts.framework */,
+				A6190E8623FEFB7A0004BD95 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6190E8723FEFBC70004BD95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6190E8B23FEFE2C0004BD95 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				A6190E8C23FEFE7D0004BD95 /* BarChartViewController.swift */,
+				A6A389C423FF4B16003BD693 /* LineChartViewController.swift */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
 		A649120323E36A5400D8E43E = {
 			isa = PBXGroup;
 			children = (
 				A649120E23E36A5500D8E43E /* test2 */,
+				A6190E7E23FEFB7A0004BD95 /* Charts.xcodeproj */,
 				A649122823E36A5600D8E43E /* test2Tests */,
 				A649123323E36A5600D8E43E /* test2UITests */,
 				A649120D23E36A5500D8E43E /* Products */,
+				A6190E8723FEFBC70004BD95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +189,7 @@
 		A649120E23E36A5500D8E43E /* test2 */ = {
 			isa = PBXGroup;
 			children = (
+				A6190E7923FEFA640004BD95 /* Custom Buttons */,
 				A649124523E36D2100D8E43E /* View */,
 				A649124223E36B1000D8E43E /* Controller */,
 				A649120F23E36A5500D8E43E /* AppDelegate.swift */,
@@ -147,6 +224,7 @@
 		A649124223E36B1000D8E43E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A6190E8B23FEFE2C0004BD95 /* Charts */,
 				A649121323E36A5500D8E43E /* ViewController.swift */,
 				A649124323E36B4500D8E43E /* ARViewController.swift */,
 				A64E91A523E9E8AC00CBB1CF /* NewProfileViewController.swift */,
@@ -175,6 +253,7 @@
 				A649120823E36A5500D8E43E /* Sources */,
 				A649120923E36A5500D8E43E /* Frameworks */,
 				A649120A23E36A5500D8E43E /* Resources */,
+				A6190E8A23FEFBC70004BD95 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,6 +334,12 @@
 			mainGroup = A649120323E36A5400D8E43E;
 			productRefGroup = A649120D23E36A5500D8E43E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A6190E7F23FEFB7A0004BD95 /* Products */;
+					ProjectRef = A6190E7E23FEFB7A0004BD95 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A649120B23E36A5500D8E43E /* test2 */,
@@ -263,6 +348,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A6190E8423FEFB7A0004BD95 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = A6190E8323FEFB7A0004BD95 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A6190E8623FEFB7A0004BD95 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = A6190E8523FEFB7A0004BD95 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A649120A23E36A5500D8E43E /* Resources */ = {
@@ -297,7 +399,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A649121A23E36A5500D8E43E /* test2.xcdatamodeld in Sources */,
+				A6190E7B23FEFADE0004BD95 /* MenuLargeFont.swift in Sources */,
 				A649121423E36A5500D8E43E /* ViewController.swift in Sources */,
+				A6190E8D23FEFE7D0004BD95 /* BarChartViewController.swift in Sources */,
+				A6190E7D23FEFB100004BD95 /* MenuSmallFont.swift in Sources */,
+				A6A389C523FF4B16003BD693 /* LineChartViewController.swift in Sources */,
 				A649121023E36A5500D8E43E /* AppDelegate.swift in Sources */,
 				A64E91A623E9E8AC00CBB1CF /* NewProfileViewController.swift in Sources */,
 				2D765F8723F53EDD00E226BD /* PickerView.swift in Sources */,
@@ -479,13 +585,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BBSC5UTQL2;
+				DEVELOPMENT_TEAM = 69P9HQ796Q;
 				INFOPLIST_FILE = test2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.BBM.babyMeasurement;
+				PRODUCT_BUNDLE_IDENTIFIER = BBM.babyMeasurement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -497,13 +603,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BBSC5UTQL2;
+				DEVELOPMENT_TEAM = 69P9HQ796Q;
 				INFOPLIST_FILE = test2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.BBM.babyMeasurement;
+				PRODUCT_BUNDLE_IDENTIFIER = BBM.babyMeasurement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

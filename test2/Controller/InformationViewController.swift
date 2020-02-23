@@ -10,21 +10,39 @@ import UIKit
 
 class InformationViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    var height = 22.0
+    var bornHeight = 19.2
+    var temp: Double?
 
-        // Do any additional setup after loading the view.
-    }
+    
+//    let height: Double
+//    let bornHeight: Double
+//    let dif: Double
     
 
-    /*
-    // MARK: - Navigation
+    
+    @IBOutlet weak var heightValueLabel: UILabel!
+    @IBOutlet weak var bornHeightValueLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var heightPercentileLabel: UILabel!
+    @IBOutlet weak var weeksOldLabel: UILabel!
+    
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        //temp = findDif(x: height, y: bornHeight)
+        heightValueLabel.text = "Height: \(height) inches"
+        bornHeightValueLabel.text = "Grown Since Birth: \(round((findDif(x: height, y: bornHeight))*1000) / 1000) inches"
+        nameLabel.text = "Aaron,"
+        heightPercentileLabel.text = "Height Percentile: 67"
+        weeksOldLabel.text = "Weeks Old: 6"
+
     }
-    */
+    
+    func findDif(x: Double, y: Double) -> Double {
+        return x - y;
+    }
+
 
 }
