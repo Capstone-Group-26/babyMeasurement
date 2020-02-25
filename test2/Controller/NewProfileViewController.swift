@@ -26,6 +26,10 @@ class NewProfileViewController: UIViewController {
         sender.resignFirstResponder()
     }
     
+    @IBAction override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     @IBAction func saveButton(_ sender: Any) {
         print("save button pressed")
         saveChild{ (done) in

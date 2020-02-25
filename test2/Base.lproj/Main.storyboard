@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="co0-fA-nlb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="co0-fA-nlb">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -206,9 +206,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EEw-rK-xSR">
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EEw-rK-xSR">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </arscnView>
                             <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMR-vY-MHO" customClass="MenuSmallFont" customModule="test2" customModuleProvider="target">
                                 <rect key="frame" x="142.5" y="741" width="129" height="71"/>
@@ -226,8 +225,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="EEw-rK-xSR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6Y8-9o-mpN"/>
                             <constraint firstItem="pMR-vY-MHO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dex-kW-mdX"/>
+                            <constraint firstItem="EEw-rK-xSR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OjZ-99-4lC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pMR-vY-MHO" secondAttribute="bottom" constant="50" id="QTG-7Q-aLU"/>
+                            <constraint firstItem="EEw-rK-xSR" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="oME-Ej-k4y"/>
+                            <constraint firstItem="EEw-rK-xSR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yzi-UA-ygz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
