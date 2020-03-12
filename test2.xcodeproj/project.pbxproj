@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -260,6 +260,8 @@
 			dependencies = (
 			);
 			name = test2;
+			packageProductDependencies = (
+			);
 			productName = test2;
 			productReference = A649120C23E36A5500D8E43E /* test2.app */;
 			productType = "com.apple.product-type.application";
@@ -332,6 +334,9 @@
 				Base,
 			);
 			mainGroup = A649120323E36A5400D8E43E;
+			packageReferences = (
+				A654365B241A8C2100C996A2 /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = A649120D23E36A5500D8E43E /* Products */;
 			projectDirPath = "";
 			projectReferences = (
@@ -740,6 +745,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A654365B241A8C2100C996A2 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCVersionGroup section */
 		A649121823E36A5500D8E43E /* test2.xcdatamodeld */ = {
