@@ -10,42 +10,66 @@ import UIKit
 import Charts
 
 class LineChartViewController: UIViewController {
+    
+    @IBOutlet weak var LineChartView: LineChartView!
+    
+    let players = ["1 month","2 months", "3 months", "4 months", "5 months", "6 months"]
+    let x1 = [20.2, 20.8, 21.3, 21.4, 21.9, 22.8]
+    let x2 = [22.2, 22.8, 23.3, 24.4, 24.9, 25.8]
+    let x3 = [18.2, 18.8, 19.3, 19.4, 19.9, 20.8]
+ 
 
-//    @IBOutlet weak var lineChartView: LineChartView!
-//
-//    let players = ["Ozil","Ramsey", "Laca", "Auba", "Xhak", "Torreira"]
-//    let goals = [20.2, 20.8, 21.3, 21.4, 21.9, 22.8]
-//    let goals2 = [20.2, 20.8, 21.3, 23.4, 25.9, 28.6]
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        customizeChart(dataPoints: players, values1: goals.map{ Double($0) }, values2: goals2.map{ Double($0) })
-//        //customizeChart(dataPoints: players, values: goals2.map{ Double($0) })
-//    }
-//
-//    func customizeChart(dataPoints: [String], values1: [Double], values2: [Double]) {
-//      var dataEntries1: [ChartDataEntry] = []
-//      var dataEntries2: [ChartDataEntry] = []
-//      for i in 0..<dataPoints.count {
-//        let dataEntry1 = ChartDataEntry(x: values1[i], y: Double(i))
-//        dataEntries1.append(dataEntry1)
-//
-//        let dataEntry2 = ChartDataEntry(x: values2[i], y: Double(i))
-//        dataEntries2.append(dataEntry2)
-//      }
-//
-//        let lineChartDataSet1 = LineChartDataSet(entries: dataEntries1, label: "Pulse1")
-//        let lineChartDataSet2 = LineChartDataSet(entries: dataEntries2, label: "Pulse2")
-//        var lineChartDataSets :[String]
-//        lineChartDataSets.append(lineChartDataSet1)
-//        lineChartDataSets.append(lineChartDataSet2)
-//
-//        let lineChartDataSet = LineChartDataSet(entries: dataEntries1, label: nil)
-//
-//        let lineChartData = LineChartData(dataSet: lineChartDataSet)
-//
-//        lineChartView.data = lineChartData
-//    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let data = LineChartData()
+        var lineChartEntry1 = [ChartDataEntry]()
+        
+        LineChartView.xAxis.valueFormatter = IndexAxisValueFormatter(values:players)
+        LineChartView.xAxis.granularity = 1
 
+        for i in 0..<x1.count {
+            lineChartEntry1.append(ChartDataEntry(x: Double(i), y: Double(x1[i]) ))
+        }
+        let line1 = LineChartDataSet(entries: lineChartEntry1, label: "Your baby")
+        data.addDataSet(line1)
+        if (x2.count > 0) {
+            var lineChartEntry2 = [ChartDataEntry]()
+            for i in 0..<x2.count {
+                lineChartEntry2.append(ChartDataEntry(x: Double(i), y: Double(x2[i]) ))
+            }
+            let line2 = LineChartDataSet(entries: lineChartEntry2, label: "100 percentile")
+            line2.colors = [NSUIColor.green]
+        data.addDataSet(line2)
+        }
+        if (x3.count > 0) {
+            var lineChartEntry3 = [ChartDataEntry]()
+            for i in 0..<x3.count {
+                lineChartEntry3.append(ChartDataEntry(x: Double(i), y: Double(x3[i]) ))
+            }
+            let line3 = LineChartDataSet(entries: lineChartEntry3, label: "0 percentile")
+            line3.colors = [NSUIColor.red]
+            data.addDataSet(line3)
+        }
+        self.LineChartView.data = data
 
+    }
+    
+    
+    //your baby
+    func setx1(){
+        
+    }
+    
+    //100 percentile
+    func setx2(){
+        
+    }
+    
+    //0 percentile
+    func setx3(){
+        
+    }
+    
+    
 }

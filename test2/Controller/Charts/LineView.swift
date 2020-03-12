@@ -6,9 +6,3 @@
 //  Copyright © 2020 baby body measurements. All rights reserved.
 //
 
-import UIKit
-import SwiftUI
-
-class LineView: AnyView {
-
-}

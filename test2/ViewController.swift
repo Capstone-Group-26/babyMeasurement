@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import SwiftUI
 
 // Global Variables
 let appDelegate = UIApplication.shared.delegate as? AppDelegate

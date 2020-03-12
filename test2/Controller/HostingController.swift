@@ -7,7 +7,12 @@
 //
 
 import UIKit
+import SwiftUI
 
-class HostingController: AnyView {
+class HostingController: UIHostingController<AnyView> {
 
+    @objc required dynamic init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder, rootView: AnyView(EmptyView()))
+    }
+    
 }
