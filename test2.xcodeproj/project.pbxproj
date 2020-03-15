@@ -230,7 +230,6 @@
 				C3072765895214FE0E3CEB0C /* Pods-test2Tests.debug.xcconfig */,
 				2FC66E04C3CD2E15D0212821 /* Pods-test2Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -630,13 +629,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KPHR2XD5ZY;
+				DEVELOPMENT_TEAM = BBSC5UTQL2;
 				INFOPLIST_FILE = test2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.babybody;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BabyBodyMeasurement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -649,13 +648,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KPHR2XD5ZY;
+				DEVELOPMENT_TEAM = BBSC5UTQL2;
 				INFOPLIST_FILE = test2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.babybody;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BabyBodyMeasurement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
