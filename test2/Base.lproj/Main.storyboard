@@ -196,7 +196,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qcv-cj-teK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="mBb-u7-ft0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="940.57971014492762" y="-1062.0535714285713"/>
+            <point key="canvasLocation" x="1372" y="-1055"/>
         </scene>
         <!--ARView Scene-->
         <scene sceneID="tne-QT-ifu">
@@ -408,7 +408,7 @@
         <!--Charts-->
         <scene sceneID="9aw-2J-DSP">
             <objects>
-                <viewController storyboardIdentifier="ChartsMenu" id="R8o-E5-SiW" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChartsMenu" id="R8o-E5-SiW" customClass="ChartMenuViewController" customModule="test2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qIC-Fn-eiE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -506,7 +506,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Jk-JS-Oey" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1205.7971014492755" y="986.38392857142856"/>
+            <point key="canvasLocation" x="1292.753623188406" y="955.58035714285711"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ycd-qn-J4H">
