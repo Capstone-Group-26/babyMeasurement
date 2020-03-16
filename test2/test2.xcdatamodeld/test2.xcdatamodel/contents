@@ -12,8 +12,12 @@
         <attribute name="height" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <relationship name="child" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Child" inverseName="measurements" inverseEntity="Child"/>
     </entity>
+    <entity name="Units" representedClassName="Units" syncable="YES" codeGenerationType="class">
+        <attribute name="type" optional="YES" attributeType="String"/>
+    </entity>
     <elements>
         <element name="Child" positionX="64.72265625" positionY="-234.91015625" width="128" height="118"/>
         <element name="Measurement" positionX="-63" positionY="9" width="128" height="88"/>
+        <element name="Units" positionX="0" positionY="-90" width="128" height="58"/>
     </elements>
 </model>
