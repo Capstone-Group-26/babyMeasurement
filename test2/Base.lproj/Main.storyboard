@@ -212,6 +212,9 @@
                             <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMR-vY-MHO">
                                 <rect key="frame" x="147" y="744.5" width="120" height="67.5"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="pMR-vY-MHO" secondAttribute="height" multiplier="126:71" id="87P-TA-R6f"/>
                                     <constraint firstAttribute="width" constant="120" id="uMQ-dF-kOg"/>
@@ -242,6 +245,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="saveButton" destination="pMR-vY-MHO" id="XHD-ou-zVa"/>
                         <outlet property="sceneView" destination="EEw-rK-xSR" id="YHe-PK-oQA"/>
                     </connections>
                 </viewController>
@@ -306,7 +310,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="53X-2m-V2g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2047.826086956522" y="-374.33035714285711"/>
+            <point key="canvasLocation" x="2372" y="-374"/>
         </scene>
         <!--Information-->
         <scene sceneID="Bks-LN-hVh">

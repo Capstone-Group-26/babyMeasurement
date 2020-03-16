@@ -16,6 +16,8 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     //outlets
     @IBOutlet var sceneView: ARSCNView!
     
+    @IBOutlet weak var saveButton: UIButton!
+    
     @IBAction func SaveButtonPressed(_ sender: Any) {
         print("save button pressed")
         saveChild{ (done) in
@@ -42,6 +44,9 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         let test = recievedChild
         print(test?.name ?? "Child passed in was null")
         
+        saveButton.isEnabled = false
+        saveButton.setTitle("Add Points", for: .disabled)
+        saveButton.setTitle("Save", for: .normal)
         // Set the view's delegate
         sceneView.delegate = self
         sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
@@ -117,7 +122,10 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
                 pow(end.position.z - start.position.z, 2)
             )
         )
+        // allow save button to be pressed and set distance for saving
         distance = tempD
+        saveButton.isEnabled = true
+        
         updateText(text: "\(abs(tempD))", atPosition: end.position)
     }
     
