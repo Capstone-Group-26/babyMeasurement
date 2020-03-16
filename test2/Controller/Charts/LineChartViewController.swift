@@ -17,6 +17,8 @@ class LineChartViewController: UIViewController {
     //variables
     var recievedChild:Child? = nil
     var heightInches:[Double] = []
+    // number array of number of days since birthDate
+    var mDates:[Double] = []
     var upperBound:[Double] = []
     var lowerBound:[Double] = []
     
@@ -45,16 +47,20 @@ class LineChartViewController: UIViewController {
         
         let measurements = recievedChild?.measurements!
         
+        let calendar = Calendar.current
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy/MM/dd"
         
         heightInches.append(recievedChild!.birthHeight)
+        mDates.append(0)
         for elem in measurements! {
             // convert metric to inches
             heightInches.append((elem as! Measurement).height * 39.3700787)
             print(formatter.string(from: (elem as! Measurement).date!))
+            mDates.append(Double(calendar.dateComponents([.day], from: recievedChild!.birthDate!, to: (elem as! Measurement).date!).day! / 30))
         }
-        
+        print(heightInches)
+        print(mDates)
         
         let data = LineChartData()
         var lineChartEntry1 = [ChartDataEntry]()
@@ -72,7 +78,7 @@ class LineChartViewController: UIViewController {
         if (heightInches.count > 0) {
             var lineChartEntry2 = [ChartDataEntry]()
             for i in 0..<heightInches.count {
-                lineChartEntry2.append(ChartDataEntry(x: Double(i), y: Double(heightInches[i]) ))
+                lineChartEntry2.append(ChartDataEntry(x: Double(mDates[i]), y: Double(heightInches[i]) ))
             }
             let line2 = LineChartDataSet(entries: lineChartEntry2, label: "Your baby")
             line2.colors = [NSUIColor.green]
