@@ -8,41 +8,86 @@
 
 import UIKit
 
-class InformationViewController: UIViewController {
-
-    var height = 22.0
-    var bornHeight = 19.2
-    var temp: Double?
-
+class InformationViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
-//    let height: Double
-//    let bornHeight: Double
-//    let dif: Double
+    //variables
+    var bornHeight:Double = 0
+    var recievedChild:Child? = nil
+    var currentMeasurement:Measurement? = nil
     
-
+    // constants
+    let INCHES_IN_METERS = 39.3700787
     
+    // outlets
     @IBOutlet weak var heightValueLabel: UILabel!
     @IBOutlet weak var bornHeightValueLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var heightPercentileLabel: UILabel!
     @IBOutlet weak var weeksOldLabel: UILabel!
+    @IBOutlet weak var picker: UIPickerView!
     
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //temp = findDif(x: height, y: bornHeight)
-        heightValueLabel.text = "Height: \(height) inches"
-        bornHeightValueLabel.text = "Grown Since Birth: \(round((findDif(x: height, y: bornHeight))*1000) / 1000) inches"
-        nameLabel.text = "Aaron,"
-        heightPercentileLabel.text = "Height Percentile: 67"
-        weeksOldLabel.text = "Weeks Old: 6"
+        picker.delegate = self
+        picker.dataSource = self
+        
+        bornHeight = recievedChild?.birthHeight ?? 0.0
+        // By default, select the most recent measurement
+        guard let numMeasurements = recievedChild?.measurements?.count else { return }
+        picker.selectRow(numMeasurements-1, inComponent: 0, animated: true)
+        currentMeasurement = recievedChild?.measurements?[numMeasurements-1] as? Measurement
+        // Set values of text fields
+        setText()
 
+    }
+    
+    
+    func setText() {
+        let height = (currentMeasurement?.height ?? 0.0) * INCHES_IN_METERS
+        print(height,bornHeight)
+        heightValueLabel.text = "Height: \(String(format: "%.2f", height)) inches"
+
+        bornHeightValueLabel.text = "Grown Since Birth: \(String(format: "%.2f", findDif(x: height , y: bornHeight))) inches"
+        
+        nameLabel.text = recievedChild?.name
+        
+        heightPercentileLabel.text = ""
+        guard let birthDate = recievedChild?.birthDate else { return }
+        guard let currentMeasurementDate = currentMeasurement?.date else { return }
+        
+        let daysOld = Calendar.current.dateComponents([.day], from: birthDate, to: currentMeasurementDate).day
+        
+        weeksOldLabel.text = "Weeks Old: \((daysOld ?? 0) / 7)"
     }
     
     func findDif(x: Double, y: Double) -> Double {
         return x - y;
     }
-
-
+    
+    
+    // Picker view functions
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return recievedChild?.measurements?.count ?? 0
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy hh:mm a"
+        return dateFormatter.string(from: (recievedChild?.measurements?[row] as AnyObject).date);
+    }
+    // Capture the picker view selection
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        // This method is triggered whenever the user makes a change to the picker selection.
+        // The parameter named row and component represents what was selected.
+            print("row: ", row)
+        print(recievedChild?.measurements?[row] as Any)
+        
+        currentMeasurement = recievedChild?.measurements?[row] as? Measurement
+        setText()
+    }
 }

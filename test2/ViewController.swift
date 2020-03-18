@@ -62,6 +62,10 @@ class ViewController: UIViewController{
             let vc = segue.destination as? ChartMenuViewController
             vc?.recievedChild = currentChild
         }
+        else if segue.destination is InformationViewController {
+            let vc = segue.destination as? InformationViewController
+            vc?.recievedChild = currentChild
+        }
     }
 
 }
