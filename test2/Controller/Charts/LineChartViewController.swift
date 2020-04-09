@@ -56,7 +56,7 @@ class LineChartViewController: UIViewController {
             // convert metric to inches
             heightInches.append((elem as! Measurement).height * 39.3700787)
             print(formatter.string(from: (elem as! Measurement).date!))
-            mDates.append(Double(calendar.dateComponents([.day], from: recievedChild!.birthDate!, to: (elem as! Measurement).date!).day! / 30))
+            mDates.append(Double(calendar.dateComponents([.day], from: recievedChild!.birthDate!, to: (elem as! Measurement).date!).day!) / 30.0)
         }
         print(heightInches)
         print(mDates)
