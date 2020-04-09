@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="co0-fA-nlb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="co0-fA-nlb">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -408,7 +408,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dn6-nE-9n5" customClass="MenuLargeFont" customModule="test2" customModuleProvider="target">
-                                <rect key="frame" x="20" y="112" width="374" height="99"/>
+                                <rect key="frame" x="20" y="68" width="374" height="143"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Bar Chart - Height"/>
                                 <connections>
@@ -445,11 +445,11 @@
             <objects>
                 <viewController id="fdQ-x6-GfY" customClass="BarChartViewController" customModule="test2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kRB-yp-bKB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gx8-6K-9K1" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <color key="backgroundColor" red="0.82737809419999997" green="0.82749778029999999" blue="0.82735186819999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
@@ -571,9 +571,9 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="EKf-w2-lQS" secondAttribute="height" multiplier="364:99" id="1gp-tz-bPO"/>
                                 </constraints>
-                                <state key="normal" title="View Charts"/>
+                                <state key="normal" title="View Chart"/>
                                 <connections>
-                                    <segue destination="R8o-E5-SiW" kind="show" id="sgw-my-aTG"/>
+                                    <segue destination="2xa-bK-UKN" kind="show" id="jzj-Ew-Hdk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -608,7 +608,10 @@
             <point key="canvasLocation" x="463.768115942029" y="-373.66071428571428"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="jzj-Ew-Hdk"/>
+    </inferredMetricsTieBreakers>
     <resources>
-        <image name="questionmark" catalog="system" width="48" height="64"/>
+        <image name="questionmark" catalog="system" width="96" height="128"/>
     </resources>
 </document>
