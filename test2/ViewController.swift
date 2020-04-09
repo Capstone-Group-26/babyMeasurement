@@ -58,8 +58,8 @@ class ViewController: UIViewController{
             let vc = segue.destination as? ARViewController
             vc?.recievedChild = currentChild
         }
-        else if segue.destination is ChartMenuViewController {
-            let vc = segue.destination as? ChartMenuViewController
+        else if segue.destination is LineChartViewController {
+            let vc = segue.destination as? LineChartViewController
             vc?.recievedChild = currentChild
         }
         else if segue.destination is InformationViewController {
