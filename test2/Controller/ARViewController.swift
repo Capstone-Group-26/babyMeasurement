@@ -15,41 +15,69 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     
     //outlets
     @IBOutlet var sceneView: ARSCNView!
+    @IBOutlet weak var helpText: UITextField!
     
-    @IBOutlet weak var saveButton: UIButton!
-    
-    @IBAction func SaveButtonPressed(_ sender: Any) {
-        print("save button pressed")
-        saveChild{ (done) in
-            if done {
-                print("we need to return now")
-                // move view back to previous screen
-                navigationController?.popViewController(animated: true)
-                self.dismiss(animated: true, completion: nil)
-            } else {
-                print("try again")
-            }
-        }
-    }
-    
-    //variables
+    // variables
     var dotNodes = [SCNNode]()
     var textNode = SCNNode()
     var recievedChild:Child? = nil
     var distance:Double? = nil
+    var saveAlert:UIAlertController = UIAlertController(
+               title: "Save this measurement?",
+               message: "",
+               preferredStyle: .alert
+           )
+    
+    // constants
+    let INCHES_IN_METER = 39.3700787;
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // set help text
+        helpText.textAlignment = .center
+        helpText.borderStyle = .none
+        helpText.font = .systemFont(ofSize: 16)
+        helpText.textColor = .white
+        helpText.backgroundColor = .black
+        helpText.text = "Place first point"
+        
+        // initialize alert dialog
+        let saveAction = UIAlertAction(
+            title: "Save",
+            style: .default
+        ) {
+            (action) in
+                print("Saving child's height...'")
+                self.saveChild{ (done) in
+                    if done {
+                        print("Save successful")
+                        // move view back to previous screen
+                        self.navigationController?.popViewController(animated: true)
+                        self.dismiss(animated: true, completion: nil)
+                     } else {
+                         print("try again")
+                     }
+                }
+        }
+        
+        let cancelAction = UIAlertAction(
+            title: "Cancel",
+            style: .cancel) {
+                (action) in
+                    self.clearNodes()
+        }
+        
+        saveAlert.addAction(saveAction)
+        saveAlert.addAction(cancelAction)
+        
         let test = recievedChild
         print(test?.name ?? "Child passed in was null")
         
-        saveButton.isEnabled = false
-        saveButton.setTitle("Add Points", for: .disabled)
-        saveButton.setTitle("Save", for: .normal)
         // Set the view's delegate
         sceneView.delegate = self
-        sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
+//        sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
         
     }
     
@@ -73,10 +101,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         if dotNodes.count >= 2 {
-            for dot in dotNodes {
-                dot.removeFromParentNode()
-            }
-            dotNodes = [SCNNode]()
+            clearNodes()
         }
         
         if let touchLocation = touches.first?.location(in: sceneView) {
@@ -87,6 +112,20 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
             }
             
         }
+        
+        if dotNodes.count == 1 {
+            helpText.text = "Place second point"
+        }
+    }
+    
+    func clearNodes() {
+        for dot in dotNodes {
+            dot.removeFromParentNode()
+        }
+        dotNodes = [SCNNode]()
+        
+        // reset help text
+        helpText.text = "Place first point"
     }
     
     func addDot(at hitResult : ARHitTestResult) {
@@ -105,6 +144,14 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         
         if dotNodes.count >= 2 {
             calculate()
+            
+            // Empty help text
+            helpText.text = ""
+            
+            // Display height in alert dialog
+            let heightInches = (distance ?? 0.0) * INCHES_IN_METER
+            saveAlert.message = "\(String(format: "%.2f", heightInches)) inches"
+            present(saveAlert, animated: true, completion: nil)
         }
     }
     
@@ -115,31 +162,13 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         print(start.position)
         print(end.position)
         
-        let tempD = Double(
+        distance = Double(
             sqrt(
                 pow(end.position.x - start.position.x, 2) +
                 pow(end.position.y - start.position.y, 2) +
                 pow(end.position.z - start.position.z, 2)
             )
         )
-        // allow save button to be pressed and set distance for saving
-        distance = tempD
-        saveButton.isEnabled = true
-        
-        updateText(text: "\(abs(tempD))", atPosition: end.position)
-    }
-    
-    func updateText(text: String, atPosition position: SCNVector3){
-        textNode.removeFromParentNode()
-        
-        let textGeometry = SCNText(string: text, extrusionDepth: 1.0)
-        textGeometry.firstMaterial?.diffuse.contents = UIColor.red
-        
-        textNode = SCNNode(geometry: textGeometry)
-        textNode.position = SCNVector3(position.x, position.y + 0.01, position.z)
-        textNode.scale = SCNVector3(0.01, 0.01, 0.01)
-        
-        sceneView.scene.rootNode.addChildNode(textNode)
         
     }
     
