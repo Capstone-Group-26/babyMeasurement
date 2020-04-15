@@ -474,7 +474,7 @@
                                 </constraints>
                                 <state key="normal" title="Health Information"/>
                                 <connections>
-                                    <segue destination="VCk-YZ-MbA" kind="show" id="UYq-Vr-leQ"/>
+                                    <segue destination="VCk-YZ-MbA" kind="show" animates="NO" id="UYq-Vr-leQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6T-CV-toO">
@@ -523,6 +523,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Baby Body Measurement" id="dFX-to-DHY"/>
                     <connections>
+                        <outlet property="chartButton" destination="EKf-w2-lQS" id="yDZ-8x-8IQ"/>
                         <outlet property="pv" destination="BgC-So-uxm" id="ES1-Bm-GVJ"/>
                     </connections>
                 </viewController>
