@@ -17,6 +17,7 @@ class ViewController: UIViewController{
     
     //outlets
     @IBOutlet weak var pv: UIPickerView!
+    @IBOutlet weak var chartButton: UIButton!
     
     //variables
     var childList = [Child]()
@@ -28,6 +29,9 @@ class ViewController: UIViewController{
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         callDelegates()
+//        if(currentChild?.measurements?.count == 0){
+//            chartButton.buttonType = MenuSmallFont
+//        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

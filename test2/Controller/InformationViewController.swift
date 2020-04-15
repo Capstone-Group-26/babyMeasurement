@@ -36,11 +36,15 @@ class InformationViewController: UIViewController, UIPickerViewDelegate, UIPicke
         bornHeight = recievedChild?.birthHeight ?? 0.0
         // By default, select the most recent measurement
         guard let numMeasurements = recievedChild?.measurements?.count else { return }
+        if(numMeasurements == 0){
+        navigationController?.popViewController(animated: false)
+        }
+        else{
         picker.selectRow(numMeasurements-1, inComponent: 0, animated: true)
         currentMeasurement = recievedChild?.measurements?[numMeasurements-1] as? Measurement
         // Set values of text fields
         setText()
-
+        }
     }
     
     
