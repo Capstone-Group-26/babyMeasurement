@@ -47,8 +47,9 @@ class InformationViewController: UIViewController, UIPickerViewDelegate, UIPicke
         }
     }
     
-    
+    //This function sets all the values within the view
     func setText() {
+        //converting meters (what the initial measurement is taken in) to inches
         let height = (currentMeasurement?.height ?? 0.0) * INCHES_IN_METERS
         print(height,bornHeight)
         heightValueLabel.text = "Height: \(String(format: "%.2f", height)) inches"
@@ -61,8 +62,9 @@ class InformationViewController: UIViewController, UIPickerViewDelegate, UIPicke
         guard let birthDate = recievedChild?.birthDate else { return }
         guard let currentMeasurementDate = currentMeasurement?.date else { return }
         
+        //calculating how many days old the baby is by taking difference between date of birth and current date using a calendar function
         let daysOld = Calendar.current.dateComponents([.day], from: birthDate, to: currentMeasurementDate).day
-        
+        //converting days old to weeks old
         weeksOldLabel.text = "Weeks Old: \((daysOld ?? 0) / 7)"
     }
     
