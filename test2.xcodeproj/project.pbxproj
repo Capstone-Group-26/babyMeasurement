@@ -160,7 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				A6190E7923FEFA640004BD95 /* Custom Buttons */,
-				A649124523E36D2100D8E43E /* View */,
 				A649124223E36B1000D8E43E /* Controller */,
 				A649120F23E36A5500D8E43E /* AppDelegate.swift */,
 				A649121123E36A5500D8E43E /* SceneDelegate.swift */,
@@ -202,13 +201,6 @@
 				A64E91A923E9F9FC00CBB1CF /* InformationViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		A649124523E36D2100D8E43E /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		F9D239C929622A63F2E313CC /* Pods */ = {
