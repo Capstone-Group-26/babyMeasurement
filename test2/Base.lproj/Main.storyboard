@@ -394,78 +394,6 @@
             </objects>
             <point key="canvasLocation" x="-243.47826086956525" y="372.99107142857139"/>
         </scene>
-        <!--Charts-->
-        <scene sceneID="9aw-2J-DSP">
-            <objects>
-                <viewController storyboardIdentifier="ChartsMenu" id="R8o-E5-SiW" customClass="ChartMenuViewController" customModule="test2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qIC-Fn-eiE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dn6-nE-9n5" customClass="MenuLargeFont" customModule="test2" customModuleProvider="target">
-                                <rect key="frame" x="20" y="68" width="374" height="143"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Bar Chart - Height"/>
-                                <connections>
-                                    <segue destination="fdQ-x6-GfY" kind="show" id="YR5-aW-BfB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSr-Zn-1Gv" customClass="MenuLargeFont" customModule="test2" customModuleProvider="target">
-                                <rect key="frame" x="20" y="242" width="374" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Line Chart"/>
-                                <connections>
-                                    <segue destination="2xa-bK-UKN" kind="show" id="vfc-Uy-FAq"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Dn6-nE-9n5" firstAttribute="leading" secondItem="qIC-Fn-eiE" secondAttribute="leadingMargin" id="47X-f8-EZk"/>
-                            <constraint firstItem="Dn6-nE-9n5" firstAttribute="trailing" secondItem="qIC-Fn-eiE" secondAttribute="trailingMargin" id="i5K-i7-y17"/>
-                            <constraint firstItem="Dn6-nE-9n5" firstAttribute="top" secondItem="B9Z-VM-aYS" secondAttribute="top" constant="24" id="jPZ-qO-qdg"/>
-                            <constraint firstItem="B9Z-VM-aYS" firstAttribute="bottom" secondItem="Dn6-nE-9n5" secondAttribute="bottom" constant="651" id="ubG-xg-A2V"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="B9Z-VM-aYS"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Charts" id="sZs-S4-r3Y"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xgM-oW-GKQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="444.92753623188412" y="494.86607142857139"/>
-        </scene>
-        <!--Bar Chart View Controller-->
-        <scene sceneID="KEu-Xv-o9o">
-            <objects>
-                <viewController id="fdQ-x6-GfY" customClass="BarChartViewController" customModule="test2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kRB-yp-bKB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gx8-6K-9K1" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
-                                <color key="backgroundColor" red="0.82737809419999997" green="0.82749778029999999" blue="0.82735186819999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="gx8-6K-9K1" firstAttribute="top" secondItem="yhY-Kn-Xv8" secondAttribute="top" id="a22-B9-XHY"/>
-                            <constraint firstItem="gx8-6K-9K1" firstAttribute="leading" secondItem="yhY-Kn-Xv8" secondAttribute="leading" id="eUc-vB-AOV"/>
-                            <constraint firstItem="yhY-Kn-Xv8" firstAttribute="trailing" secondItem="gx8-6K-9K1" secondAttribute="trailing" id="xVR-Ug-Wie"/>
-                            <constraint firstItem="yhY-Kn-Xv8" firstAttribute="bottom" secondItem="gx8-6K-9K1" secondAttribute="bottom" id="zJp-eh-JE4"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="yhY-Kn-Xv8"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="iMf-Gh-qXA"/>
-                    <connections>
-                        <outlet property="BarChartView" destination="gx8-6K-9K1" id="vRJ-a1-bOz"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2nx-Vt-4aJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1295" y="314"/>
-        </scene>
         <!--Line Chart View Controller-->
         <scene sceneID="xoz-9n-DOQ">
             <objects>
@@ -495,7 +423,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Jk-JS-Oey" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1292.753623188406" y="955.58035714285711"/>
+            <point key="canvasLocation" x="765" y="373"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ycd-qn-J4H">
@@ -603,9 +531,6 @@
             <point key="canvasLocation" x="463.768115942029" y="-373.66071428571428"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="jzj-Ew-Hdk"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="questionmark" catalog="system" width="96" height="128"/>
     </resources>

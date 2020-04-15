@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D09591B241DC1270051E2F4 /* ChartMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D09591A241DC1270051E2F4 /* ChartMenuViewController.swift */; };
 		723F5FEAD9F64F341F10D0E8 /* libPods-test2Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 97E7C884F457B08F1958F698 /* libPods-test2Tests.a */; };
 		96680465CEB3D1314B32033F /* libPods-test2-test2UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E38C8780039B8A12B57A752C /* libPods-test2-test2UITests.a */; };
 		A6190E7B23FEFADE0004BD95 /* MenuLargeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6190E7A23FEFADE0004BD95 /* MenuLargeFont.swift */; };
 		A6190E7D23FEFB100004BD95 /* MenuSmallFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6190E7C23FEFB100004BD95 /* MenuSmallFont.swift */; };
-		A6190E8D23FEFE7D0004BD95 /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6190E8C23FEFE7D0004BD95 /* BarChartViewController.swift */; };
 		A649121023E36A5500D8E43E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A649120F23E36A5500D8E43E /* AppDelegate.swift */; };
 		A649121223E36A5500D8E43E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A649121123E36A5500D8E43E /* SceneDelegate.swift */; };
 		A649121423E36A5500D8E43E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A649121323E36A5500D8E43E /* ViewController.swift */; };
@@ -49,7 +47,6 @@
 
 /* Begin PBXFileReference section */
 		03A0D205B23C529C0938D17D /* Pods-test2-test2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test2-test2UITests.debug.xcconfig"; path = "Target Support Files/Pods-test2-test2UITests/Pods-test2-test2UITests.debug.xcconfig"; sourceTree = "<group>"; };
-		2D09591A241DC1270051E2F4 /* ChartMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartMenuViewController.swift; sourceTree = "<group>"; };
 		2FC66E04C3CD2E15D0212821 /* Pods-test2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test2Tests.release.xcconfig"; path = "Target Support Files/Pods-test2Tests/Pods-test2Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4C5C049ACD5CCA69CE25EC60 /* Pods-test2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test2.debug.xcconfig"; path = "Target Support Files/Pods-test2/Pods-test2.debug.xcconfig"; sourceTree = "<group>"; };
 		76339A92175314E86EB9CDC0 /* libPods-test2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,7 +54,6 @@
 		97E7C884F457B08F1958F698 /* libPods-test2Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test2Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6190E7A23FEFADE0004BD95 /* MenuLargeFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuLargeFont.swift; sourceTree = "<group>"; };
 		A6190E7C23FEFB100004BD95 /* MenuSmallFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSmallFont.swift; sourceTree = "<group>"; };
-		A6190E8C23FEFE7D0004BD95 /* BarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
 		A649120C23E36A5500D8E43E /* test2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A649120F23E36A5500D8E43E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A649121123E36A5500D8E43E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,7 +129,6 @@
 		A6190E8B23FEFE2C0004BD95 /* Charts */ = {
 			isa = PBXGroup;
 			children = (
-				A6190E8C23FEFE7D0004BD95 /* BarChartViewController.swift */,
 				A6A389C423FF4B16003BD693 /* LineChartViewController.swift */,
 			);
 			path = Charts;
@@ -205,7 +200,6 @@
 				A64E91A523E9E8AC00CBB1CF /* NewProfileViewController.swift */,
 				A64E91A723E9F9EF00CBB1CF /* VisualizationsViewController.swift */,
 				A64E91A923E9F9FC00CBB1CF /* InformationViewController.swift */,
-				2D09591A241DC1270051E2F4 /* ChartMenuViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -441,8 +435,6 @@
 				A649121A23E36A5500D8E43E /* test2.xcdatamodeld in Sources */,
 				A6190E7B23FEFADE0004BD95 /* MenuLargeFont.swift in Sources */,
 				A649121423E36A5500D8E43E /* ViewController.swift in Sources */,
-				A6190E8D23FEFE7D0004BD95 /* BarChartViewController.swift in Sources */,
-				2D09591B241DC1270051E2F4 /* ChartMenuViewController.swift in Sources */,
 				A6190E7D23FEFB100004BD95 /* MenuSmallFont.swift in Sources */,
 				A6A389C523FF4B16003BD693 /* LineChartViewController.swift in Sources */,
 				A649121023E36A5500D8E43E /* AppDelegate.swift in Sources */,
