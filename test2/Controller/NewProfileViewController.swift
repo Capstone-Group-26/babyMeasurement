@@ -49,7 +49,7 @@ class NewProfileViewController: UIViewController {
             print("fail")
             return
         }
-        
+        // error handling for child input
         if (firstName.text?.isEmpty ?? true) {
             print("firstName is empty")
             return
@@ -65,6 +65,7 @@ class NewProfileViewController: UIViewController {
             return
         }
         
+        // create a new child and save the child to database
         let newChild = Child(context: managedContext)
         
         newChild.name = firstName.text!+" "+lastName.text!
@@ -90,16 +91,4 @@ class NewProfileViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

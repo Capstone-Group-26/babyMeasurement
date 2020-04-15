@@ -31,6 +31,7 @@ class ViewController: UIViewController{
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        // don't show the view until entities are loaded from db to prevent errorss
         fetchData{(done) in
             if done {
                 print("Data is ready to be used in tableview")
@@ -71,13 +72,15 @@ class ViewController: UIViewController{
 }
 
 extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    // only one element in picker wheel
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
-    
+    // number of rows in picker wheel = number of entities in childList
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return childList.count
     }
+    // each row in the pickerview is labeled with the entity name
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return childList[row].name
     }
@@ -96,10 +99,12 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
 
 extension ViewController {
     func fetchData(completion: (_ complete: Bool) -> ()){
+        // if we fail to load from the database print fail and return
         guard let managedContext = appDelegate?.persistentContainer.viewContext else {
             print("fail")
             return
         }
+        // we are requesting the child table s
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Child")
         
         // try to get list of created children from database
