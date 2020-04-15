@@ -113,7 +113,7 @@ extension ViewController {
         }
         
         // set current selected child to the first in list
-        if childList.count > 0 {
+        if childList.count > 0 && currentChild == nil {
             currentChild = childList[0]
         }
     }
