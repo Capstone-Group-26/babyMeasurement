@@ -31,7 +31,8 @@ Make sure the target device is the iPhone you connected.
 ![Run project](img/run-project.png)
 
 6. Once the app is installed, you will also need to permit the app to run on your iPhone.
-Go to Settings > General > Device Management > Trust this developer.
+Go to Settings > General > Device Management > Trust [your developer ID].
+
 ![Trust developer](img/trust-developer.png)
 
 7. Rerun the app from Xcode
