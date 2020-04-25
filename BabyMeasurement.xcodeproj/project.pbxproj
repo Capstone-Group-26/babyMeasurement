@@ -18,8 +18,8 @@
 		A649121A23E36A5500D8E43E /* test2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A649121823E36A5500D8E43E /* test2.xcdatamodeld */; };
 		A649121C23E36A5500D8E43E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A649121B23E36A5500D8E43E /* Assets.xcassets */; };
 		A649121F23E36A5500D8E43E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A649121D23E36A5500D8E43E /* LaunchScreen.storyboard */; };
-		A649122A23E36A5600D8E43E /* test2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A649122923E36A5600D8E43E /* test2Tests.swift */; };
-		A649123523E36A5600D8E43E /* test2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A649123423E36A5600D8E43E /* test2UITests.swift */; };
+		A649122A23E36A5600D8E43E /* BabyMeasurementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A649122923E36A5600D8E43E /* BabyMeasurementTests.swift */; };
+		A649123523E36A5600D8E43E /* BabyMeasurementUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A649123423E36A5600D8E43E /* BabyMeasurementUITests.swift */; };
 		A649124423E36B4500D8E43E /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A649124323E36B4500D8E43E /* ARViewController.swift */; };
 		A64E91A623E9E8AC00CBB1CF /* NewProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E91A523E9E8AC00CBB1CF /* NewProfileViewController.swift */; };
 		A64E91AA23E9F9FC00CBB1CF /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E91A923E9F9FC00CBB1CF /* InformationViewController.swift */; };
@@ -53,7 +53,7 @@
 		97E7C884F457B08F1958F698 /* libPods-test2Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test2Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6190E7A23FEFADE0004BD95 /* MenuLargeFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuLargeFont.swift; sourceTree = "<group>"; };
 		A6190E7C23FEFB100004BD95 /* MenuSmallFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSmallFont.swift; sourceTree = "<group>"; };
-		A649120C23E36A5500D8E43E /* test2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A649120C23E36A5500D8E43E /* BabyMeasurement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabyMeasurement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A649120F23E36A5500D8E43E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A649121123E36A5500D8E43E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A649121323E36A5500D8E43E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
@@ -62,11 +62,11 @@
 		A649121B23E36A5500D8E43E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A649121E23E36A5500D8E43E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A649122023E36A5500D8E43E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A649122523E36A5600D8E43E /* test2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A649122923E36A5600D8E43E /* test2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test2Tests.swift; sourceTree = "<group>"; };
+		A649122523E36A5600D8E43E /* BabyMeasurementTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabyMeasurementTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A649122923E36A5600D8E43E /* BabyMeasurementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyMeasurementTests.swift; sourceTree = "<group>"; };
 		A649122B23E36A5600D8E43E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A649123023E36A5600D8E43E /* test2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A649123423E36A5600D8E43E /* test2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test2UITests.swift; sourceTree = "<group>"; };
+		A649123023E36A5600D8E43E /* BabyMeasurementUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabyMeasurementUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A649123423E36A5600D8E43E /* BabyMeasurementUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BabyMeasurementUITests.swift; sourceTree = "<group>"; };
 		A649123623E36A5600D8E43E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A649124323E36B4500D8E43E /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		A64E91A523E9E8AC00CBB1CF /* NewProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProfileViewController.swift; sourceTree = "<group>"; };
@@ -135,9 +135,9 @@
 		A649120323E36A5400D8E43E = {
 			isa = PBXGroup;
 			children = (
-				A649120E23E36A5500D8E43E /* test2 */,
-				A649122823E36A5600D8E43E /* test2Tests */,
-				A649123323E36A5600D8E43E /* test2UITests */,
+				A649120E23E36A5500D8E43E /* BabyMeasurement */,
+				A649122823E36A5600D8E43E /* BabyMeasurementTests */,
+				A649123323E36A5600D8E43E /* BabyMeasurementUITests */,
 				A649120D23E36A5500D8E43E /* Products */,
 				A6190E8723FEFBC70004BD95 /* Frameworks */,
 				F9D239C929622A63F2E313CC /* Pods */,
@@ -147,14 +147,14 @@
 		A649120D23E36A5500D8E43E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A649120C23E36A5500D8E43E /* test2.app */,
-				A649122523E36A5600D8E43E /* test2Tests.xctest */,
-				A649123023E36A5600D8E43E /* test2UITests.xctest */,
+				A649120C23E36A5500D8E43E /* BabyMeasurement.app */,
+				A649122523E36A5600D8E43E /* BabyMeasurementTests.xctest */,
+				A649123023E36A5600D8E43E /* BabyMeasurementUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A649120E23E36A5500D8E43E /* test2 */ = {
+		A649120E23E36A5500D8E43E /* BabyMeasurement */ = {
 			isa = PBXGroup;
 			children = (
 				A6190E7923FEFA640004BD95 /* Custom Buttons */,
@@ -167,25 +167,25 @@
 				A649122023E36A5500D8E43E /* Info.plist */,
 				A649121823E36A5500D8E43E /* test2.xcdatamodeld */,
 			);
-			path = test2;
+			path = BabyMeasurement;
 			sourceTree = "<group>";
 		};
-		A649122823E36A5600D8E43E /* test2Tests */ = {
+		A649122823E36A5600D8E43E /* BabyMeasurementTests */ = {
 			isa = PBXGroup;
 			children = (
-				A649122923E36A5600D8E43E /* test2Tests.swift */,
+				A649122923E36A5600D8E43E /* BabyMeasurementTests.swift */,
 				A649122B23E36A5600D8E43E /* Info.plist */,
 			);
-			path = test2Tests;
+			path = BabyMeasurementTests;
 			sourceTree = "<group>";
 		};
-		A649123323E36A5600D8E43E /* test2UITests */ = {
+		A649123323E36A5600D8E43E /* BabyMeasurementUITests */ = {
 			isa = PBXGroup;
 			children = (
-				A649123423E36A5600D8E43E /* test2UITests.swift */,
+				A649123423E36A5600D8E43E /* BabyMeasurementUITests.swift */,
 				A649123623E36A5600D8E43E /* Info.plist */,
 			);
-			path = test2UITests;
+			path = BabyMeasurementUITests;
 			sourceTree = "<group>";
 		};
 		A649124223E36B1000D8E43E /* Controller */ = {
@@ -216,9 +216,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A649120B23E36A5500D8E43E /* test2 */ = {
+		A649120B23E36A5500D8E43E /* BabyMeasurement */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A649123923E36A5600D8E43E /* Build configuration list for PBXNativeTarget "test2" */;
+			buildConfigurationList = A649123923E36A5600D8E43E /* Build configuration list for PBXNativeTarget "BabyMeasurement" */;
 			buildPhases = (
 				D8DAFF1A30239806202F96C7 /* [CP] Check Pods Manifest.lock */,
 				A649120823E36A5500D8E43E /* Sources */,
@@ -229,16 +229,16 @@
 			);
 			dependencies = (
 			);
-			name = test2;
+			name = BabyMeasurement;
 			packageProductDependencies = (
 			);
 			productName = test2;
-			productReference = A649120C23E36A5500D8E43E /* test2.app */;
+			productReference = A649120C23E36A5500D8E43E /* BabyMeasurement.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A649122423E36A5600D8E43E /* test2Tests */ = {
+		A649122423E36A5600D8E43E /* BabyMeasurementTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A649123C23E36A5600D8E43E /* Build configuration list for PBXNativeTarget "test2Tests" */;
+			buildConfigurationList = A649123C23E36A5600D8E43E /* Build configuration list for PBXNativeTarget "BabyMeasurementTests" */;
 			buildPhases = (
 				772F9ACD797AB1445623D913 /* [CP] Check Pods Manifest.lock */,
 				A649122123E36A5600D8E43E /* Sources */,
@@ -250,14 +250,14 @@
 			dependencies = (
 				A649122723E36A5600D8E43E /* PBXTargetDependency */,
 			);
-			name = test2Tests;
+			name = BabyMeasurementTests;
 			productName = test2Tests;
-			productReference = A649122523E36A5600D8E43E /* test2Tests.xctest */;
+			productReference = A649122523E36A5600D8E43E /* BabyMeasurementTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A649122F23E36A5600D8E43E /* test2UITests */ = {
+		A649122F23E36A5600D8E43E /* BabyMeasurementUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A649123F23E36A5600D8E43E /* Build configuration list for PBXNativeTarget "test2UITests" */;
+			buildConfigurationList = A649123F23E36A5600D8E43E /* Build configuration list for PBXNativeTarget "BabyMeasurementUITests" */;
 			buildPhases = (
 				C66494A1F35AFD36670973E4 /* [CP] Check Pods Manifest.lock */,
 				A649122C23E36A5600D8E43E /* Sources */,
@@ -269,9 +269,9 @@
 			dependencies = (
 				A649123223E36A5600D8E43E /* PBXTargetDependency */,
 			);
-			name = test2UITests;
+			name = BabyMeasurementUITests;
 			productName = test2UITests;
-			productReference = A649123023E36A5600D8E43E /* test2UITests.xctest */;
+			productReference = A649123023E36A5600D8E43E /* BabyMeasurementUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -297,7 +297,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A649120723E36A5400D8E43E /* Build configuration list for PBXProject "test2" */;
+			buildConfigurationList = A649120723E36A5400D8E43E /* Build configuration list for PBXProject "BabyMeasurement" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -313,9 +313,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A649120B23E36A5500D8E43E /* test2 */,
-				A649122423E36A5600D8E43E /* test2Tests */,
-				A649122F23E36A5600D8E43E /* test2UITests */,
+				A649120B23E36A5500D8E43E /* BabyMeasurement */,
+				A649122423E36A5600D8E43E /* BabyMeasurementTests */,
+				A649122F23E36A5600D8E43E /* BabyMeasurementUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -438,7 +438,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A649122A23E36A5600D8E43E /* test2Tests.swift in Sources */,
+				A649122A23E36A5600D8E43E /* BabyMeasurementTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,7 +446,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A649123523E36A5600D8E43E /* test2UITests.swift in Sources */,
+				A649123523E36A5600D8E43E /* BabyMeasurementUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,12 +455,12 @@
 /* Begin PBXTargetDependency section */
 		A649122723E36A5600D8E43E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A649120B23E36A5500D8E43E /* test2 */;
+			target = A649120B23E36A5500D8E43E /* BabyMeasurement */;
 			targetProxy = A649122623E36A5600D8E43E /* PBXContainerItemProxy */;
 		};
 		A649123223E36A5600D8E43E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A649120B23E36A5500D8E43E /* test2 */;
+			target = A649120B23E36A5500D8E43E /* BabyMeasurement */;
 			targetProxy = A649123123E36A5600D8E43E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -606,7 +606,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KPHR2XD5ZY;
-				INFOPLIST_FILE = test2/Info.plist;
+				INFOPLIST_FILE = BabyMeasurement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -625,7 +625,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KPHR2XD5ZY;
-				INFOPLIST_FILE = test2/Info.plist;
+				INFOPLIST_FILE = BabyMeasurement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -656,7 +656,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test2.app/test2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BabyMeasurement.app/BabyMeasurement";
 			};
 			name = Debug;
 		};
@@ -679,7 +679,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/test2.app/test2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BabyMeasurement.app/BabyMeasurement";
 			};
 			name = Release;
 		};
@@ -728,7 +728,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A649120723E36A5400D8E43E /* Build configuration list for PBXProject "test2" */ = {
+		A649120723E36A5400D8E43E /* Build configuration list for PBXProject "BabyMeasurement" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A649123723E36A5600D8E43E /* Debug */,
@@ -737,7 +737,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A649123923E36A5600D8E43E /* Build configuration list for PBXNativeTarget "test2" */ = {
+		A649123923E36A5600D8E43E /* Build configuration list for PBXNativeTarget "BabyMeasurement" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A649123A23E36A5600D8E43E /* Debug */,
@@ -746,7 +746,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A649123C23E36A5600D8E43E /* Build configuration list for PBXNativeTarget "test2Tests" */ = {
+		A649123C23E36A5600D8E43E /* Build configuration list for PBXNativeTarget "BabyMeasurementTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A649123D23E36A5600D8E43E /* Debug */,
@@ -755,7 +755,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A649123F23E36A5600D8E43E /* Build configuration list for PBXNativeTarget "test2UITests" */ = {
+		A649123F23E36A5600D8E43E /* Build configuration list for PBXNativeTarget "BabyMeasurementUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A649124023E36A5600D8E43E /* Debug */,
