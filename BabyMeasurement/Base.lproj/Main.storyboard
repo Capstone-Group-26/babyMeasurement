@@ -357,6 +357,9 @@
                                             <segment title="Growth"/>
                                             <segment title="Weeks Old"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="indexChanged:" destination="VCk-YZ-MbA" eventType="valueChanged" id="sX2-QN-k1t"/>
+                                        </connections>
                                     </segmentedControl>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xsb-Wg-LYr">
                                         <rect key="frame" x="37" y="52" width="134" height="109"/>

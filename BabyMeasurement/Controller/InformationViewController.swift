@@ -18,6 +18,9 @@ class InformationViewController: UIViewController, UIPickerViewDelegate, UIPicke
     // constants
     let INCHES_IN_METERS = 39.3700787
     
+
+    
+    
     // outlets
     @IBOutlet weak var bornHeightValueLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
@@ -29,13 +32,29 @@ class InformationViewController: UIViewController, UIPickerViewDelegate, UIPicke
     @IBOutlet weak var dataSelector: UISegmentedControl!
 
     
+    @IBAction func indexChanged(_ sender: Any) {
+        let height1 = (currentMeasurement?.height ?? 0.0) * INCHES_IN_METERS
+        bornHeight = recievedChild?.birthHeight ?? 0.0
+        switch dataSelector.selectedSegmentIndex
+        {
+        case 0:
+            bornHeightValueLabel.text = "\(String(format: "%.2f", bornHeight)) inches"
+        case 1:
+            bornHeightValueLabel.text = "\(String(format: "%.2f", findDif(x: height1 , y: bornHeight))) inches"
+        case 2:
+            guard let birthDate = recievedChild?.birthDate else { return }
+            guard let currentMeasurementDate = currentMeasurement?.date else { return }
+            let daysOld = Calendar.current.dateComponents([.day], from: birthDate, to: currentMeasurementDate).day
+            bornHeightValueLabel.text = "\((daysOld ?? 0) / 7)"
+        default:
+            break
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         picker.delegate = self
         picker.dataSource = self
-        NotificationCenter.default.addObserver(self, selector: Selector(("OnAppBecameActive")), name: UIApplication.didBecomeActiveNotification, object: nil)
-        
-        dataSelector.addTarget(self, action: Selector(("setText")), for:.touchUpInside)
         
         bornHeight = recievedChild?.birthHeight ?? 0.0
         // By default, select the most recent measurement
@@ -62,10 +81,6 @@ class InformationViewController: UIViewController, UIPickerViewDelegate, UIPicke
         // Set values of text fields
         setText()
         }
-    }
-    
-    func OnAppBecameActive(){
-        setText()
     }
     
     func setText(){
