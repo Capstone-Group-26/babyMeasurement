@@ -35,7 +35,7 @@ class InformationViewController: UIViewController, UIPickerViewDelegate, UIPicke
         picker.dataSource = self
         NotificationCenter.default.addObserver(self, selector: Selector(("OnAppBecameActive")), name: UIApplication.didBecomeActiveNotification, object: nil)
         
-        dataSelector.addTarget(self, action: "setText:", for:.touchUpInside)
+        dataSelector.addTarget(self, action: Selector(("setText")), for:.touchUpInside)
         
         bornHeight = recievedChild?.birthHeight ?? 0.0
         // By default, select the most recent measurement
