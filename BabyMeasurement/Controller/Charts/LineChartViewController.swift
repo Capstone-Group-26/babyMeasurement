@@ -106,20 +106,4 @@ class LineChartViewController: UIViewController {
     }
     
     
-    //your baby
-    func setx1(){
-        
-    }
-    
-    //100 percentile
-    func setx2(){
-        
-    }
-    
-    //0 percentile
-    func setx3(){
-        
-    }
-    
-    
 }

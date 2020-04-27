@@ -18,15 +18,38 @@ class InformationViewController: UIViewController, UIPickerViewDelegate, UIPicke
     // constants
     let INCHES_IN_METERS = 39.3700787
     
+
+    
+    
     // outlets
-    @IBOutlet weak var heightValueLabel: UILabel!
     @IBOutlet weak var bornHeightValueLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var heightPercentileLabel: UILabel!
     @IBOutlet weak var weeksOldLabel: UILabel!
     @IBOutlet weak var picker: UIPickerView!
     
+    @IBOutlet weak var avatarImage: UIImageView!
+    
+    @IBOutlet weak var dataSelector: UISegmentedControl!
 
+    
+    @IBAction func indexChanged(_ sender: Any) {
+        let height1 = (currentMeasurement?.height ?? 0.0) * INCHES_IN_METERS
+        bornHeight = recievedChild?.birthHeight ?? 0.0
+        switch dataSelector.selectedSegmentIndex
+        {
+        case 0:
+            bornHeightValueLabel.text = "\(String(format: "%.2f", bornHeight)) inches"
+        case 1:
+            bornHeightValueLabel.text = "\(String(format: "%.2f", findDif(x: height1 , y: bornHeight))) inches"
+        case 2:
+            guard let birthDate = recievedChild?.birthDate else { return }
+            guard let currentMeasurementDate = currentMeasurement?.date else { return }
+            let daysOld = Calendar.current.dateComponents([.day], from: birthDate, to: currentMeasurementDate).day
+            bornHeightValueLabel.text = "\((daysOld ?? 0) / 7)"
+        default:
+            break
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,31 +65,41 @@ class InformationViewController: UIViewController, UIPickerViewDelegate, UIPicke
         else{
         picker.selectRow(numMeasurements-1, inComponent: 0, animated: true)
         currentMeasurement = recievedChild?.measurements?[numMeasurements-1] as? Measurement
+            if(recievedChild?.sex == "Male"){
+                avatarImage.image = UIImage(named: "maleSymbol")
+            }
+            else{
+                avatarImage.image = UIImage(named: "femaleSymbol")
+            }
+            //avatarImage.layer.borderWidth = 2
+            avatarImage.layer.masksToBounds = false
+            //avatarImage.layer.borderColor = UIColor.black.cgColor
+            //avatarImage.layer.cornerRadius = avatarImage.frame.height/2
+            avatarImage.clipsToBounds = true
+            
+            nameLabel.text = recievedChild?.name
         // Set values of text fields
         setText()
         }
     }
     
-    //This function sets all the values within the view
-    func setText() {
-        //converting meters (what the initial measurement is taken in) to inches
+    func setText(){
+        
         let height = (currentMeasurement?.height ?? 0.0) * INCHES_IN_METERS
-        print(height,bornHeight)
-        heightValueLabel.text = "Height: \(String(format: "%.2f", height)) inches"
-
-        bornHeightValueLabel.text = "Grown Since Birth: \(String(format: "%.2f", findDif(x: height , y: bornHeight))) inches"
-        
-        nameLabel.text = recievedChild?.name
-        
-        heightPercentileLabel.text = ""
-        guard let birthDate = recievedChild?.birthDate else { return }
-        guard let currentMeasurementDate = currentMeasurement?.date else { return }
-        
-        //calculating how many days old the baby is by taking difference between date of birth and current date using a calendar function
-        let daysOld = Calendar.current.dateComponents([.day], from: birthDate, to: currentMeasurementDate).day
-        //converting days old to weeks old
-        weeksOldLabel.text = "Weeks Old: \((daysOld ?? 0) / 7)"
+        if(dataSelector.titleForSegment(at: dataSelector.selectedSegmentIndex) ==  "Born Height"){
+            bornHeightValueLabel.text = "\(String(format: "%.2f", bornHeight)) inches"
+        }
+        else if(dataSelector.titleForSegment(at: dataSelector.selectedSegmentIndex) ==  "Growth"){
+            bornHeightValueLabel.text = "\(String(format: "%.2f", findDif(x: height , y: bornHeight))) inches"
+        }
+        else{
+            guard let birthDate = recievedChild?.birthDate else { return }
+            guard let currentMeasurementDate = currentMeasurement?.date else { return }
+            let daysOld = Calendar.current.dateComponents([.day], from: birthDate, to: currentMeasurementDate).day
+            bornHeightValueLabel.text = "\((daysOld ?? 0) / 7)"
+        }
     }
+
     
     func findDif(x: Double, y: Double) -> Double {
         return x - y;
