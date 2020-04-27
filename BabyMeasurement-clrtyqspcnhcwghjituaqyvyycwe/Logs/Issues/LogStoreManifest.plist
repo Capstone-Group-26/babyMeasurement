@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>33562699-7B1A-473B-91B8-40FC7320621B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>33562699-7B1A-473B-91B8-40FC7320621B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>BabyMeasurement-dwjqsvcecrfjhbedganvsceqpghw</string>
+			<key>timeStartedRecording</key>
+			<real>609653561.96585405</real>
+			<key>timeStoppedRecording</key>
+			<real>609653580.51431894</real>
+			<key>title</key>
+			<string>Build target BabyMeasurement</string>
+			<key>uniqueIdentifier</key>
+			<string>33562699-7B1A-473B-91B8-40FC7320621B</string>
+		</dict>
+		<key>66C1EDF3-3317-470D-9B17-A34900EB1021</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.library.static</string>
+			<key>fileName</key>
+			<string>66C1EDF3-3317-470D-9B17-A34900EB1021.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>Charts-cttswnbqwjjatyfmtkynyzrdxctp</string>
+			<key>timeStartedRecording</key>
+			<real>609653561.96333206</real>
+			<key>timeStoppedRecording</key>
+			<real>609653564.65506196</real>
+			<key>title</key>
+			<string>Build target Charts</string>
+			<key>uniqueIdentifier</key>
+			<string>66C1EDF3-3317-470D-9B17-A34900EB1021</string>
+		</dict>
+		<key>F0037ACE-7EDB-412B-9295-4DF94FB88BF2</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.library.static</string>
+			<key>fileName</key>
+			<string>F0037ACE-7EDB-412B-9295-4DF94FB88BF2.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>Pods-test2-cttswnbqwjjatyfmtkynyzrdxctp</string>
+			<key>timeStartedRecording</key>
+			<real>609653564.656196</real>
+			<key>timeStoppedRecording</key>
+			<real>609653565.80940199</real>
+			<key>title</key>
+			<string>Build target Pods-test2</string>
+			<key>uniqueIdentifier</key>
+			<string>F0037ACE-7EDB-412B-9295-4DF94FB88BF2</string>
+		</dict>
+	</dict>
+	<key>preserveOldLogs</key>
+	<true/>
+</dict>
+</plist>

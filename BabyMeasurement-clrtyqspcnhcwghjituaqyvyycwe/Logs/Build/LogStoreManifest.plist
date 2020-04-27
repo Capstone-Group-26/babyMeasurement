@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>5C316701-6DF5-4177-9F28-505A9F6AA70E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>5C316701-6DF5-4177-9F28-505A9F6AA70E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>BabyMeasurement project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>BabyMeasurement</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build BabyMeasurement</string>
+			<key>timeStartedRecording</key>
+			<real>609653561.75709498</real>
+			<key>timeStoppedRecording</key>
+			<real>609653580.52181494</real>
+			<key>title</key>
+			<string>Build BabyMeasurement</string>
+			<key>uniqueIdentifier</key>
+			<string>5C316701-6DF5-4177-9F28-505A9F6AA70E</string>
+		</dict>
+		<key>E681B15C-733A-4B50-B58F-102AED7E527B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E681B15C-733A-4B50-B58F-102AED7E527B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>BabyMeasurement project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>BabyMeasurement</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build BabyMeasurement</string>
+			<key>timeStartedRecording</key>
+			<real>609653865.482095</real>
+			<key>timeStoppedRecording</key>
+			<real>609653865.52754998</real>
+			<key>title</key>
+			<string>Build BabyMeasurement</string>
+			<key>uniqueIdentifier</key>
+			<string>E681B15C-733A-4B50-B58F-102AED7E527B</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

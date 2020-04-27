@@ -1,0 +1,994 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "NewProfileViewController"
+provides-nominal:
+- "15BabyMeasurement24NewProfileViewControllerC"
+provides-member:
+- ["15BabyMeasurement24NewProfileViewControllerC", ""]
+provides-dynamic-lookup:
+- "DOB"
+- "bioSex"
+- "bornHeight"
+- "done"
+- "firstName"
+- "lastName"
+- "saveButton"
+- "saveChild"
+- "touchesBegan"
+- "viewDidLoad"
+depends-top-level:
+- !private "+"
+- !private "??"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- !private "Child"
+- !private "Double"
+- "NewProfileViewController"
+- "Set"
+- !private "StringLiteralType"
+- "UIDatePicker"
+- "UIEvent"
+- "UISegmentedControl"
+- "UITextField"
+- "UITouch"
+- "UIViewController"
+- !private "UnicodeScalarType"
+- !private "appDelegate"
+- !private "print"
+depends-member:
+- !private ["s18AdditiveArithmeticP", "init"]
+- !private ["15BabyMeasurement11AppDelegateC", "persistentContainer"]
+- !private ["SK", "isEmpty"]
+- !private ["SB", "init"]
+- !private ["So15CALayerDelegateP", "date"]
+- !private ["So15CALayerDelegateP", "endEditing"]
+- !private ["So15CALayerDelegateP", "resignFirstResponder"]
+- !private ["So15CALayerDelegateP", "selectedSegmentIndex"]
+- !private ["So15CALayerDelegateP", "text"]
+- !private ["So15CALayerDelegateP", "titleForSegment"]
+- !private ["s7CVarArgP", "Child"]
+- !private ["s7CVarArgP", "DOB"]
+- !private ["s7CVarArgP", "Double"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "appDelegate"]
+- !private ["s7CVarArgP", "bioSex"]
+- !private ["s7CVarArgP", "birthDate"]
+- !private ["s7CVarArgP", "birthHeight"]
+- !private ["s7CVarArgP", "bornHeight"]
+- !private ["s7CVarArgP", "date"]
+- !private ["s7CVarArgP", "dismiss"]
+- !private ["s7CVarArgP", "endEditing"]
+- !private ["s7CVarArgP", "firstName"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isEmpty"]
+- !private ["s7CVarArgP", "lastName"]
+- !private ["s7CVarArgP", "name"]
+- !private ["s7CVarArgP", "navigationController"]
+- !private ["s7CVarArgP", "persistentContainer"]
+- !private ["s7CVarArgP", "popViewController"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "resignFirstResponder"]
+- !private ["s7CVarArgP", "save"]
+- !private ["s7CVarArgP", "saveChild"]
+- !private ["s7CVarArgP", "selectedSegmentIndex"]
+- !private ["s7CVarArgP", "sex"]
+- !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "titleForSegment"]
+- !private ["s7CVarArgP", "view"]
+- !private ["s7CVarArgP", "viewContext"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["15BabyMeasurement5ChildC", "birthDate"]
+- !private ["15BabyMeasurement5ChildC", "birthHeight"]
+- !private ["15BabyMeasurement5ChildC", "init"]
+- !private ["15BabyMeasurement5ChildC", "name"]
+- !private ["15BabyMeasurement5ChildC", "sex"]
+- !private ["Sl", "isEmpty"]
+- !private ["SL", "init"]
+- !private ["SL", "isEmpty"]
+- !private ["s28CustomDebugStringConvertibleP", "Child"]
+- !private ["s28CustomDebugStringConvertibleP", "DOB"]
+- !private ["s28CustomDebugStringConvertibleP", "Double"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "appDelegate"]
+- !private ["s28CustomDebugStringConvertibleP", "bioSex"]
+- !private ["s28CustomDebugStringConvertibleP", "birthDate"]
+- !private ["s28CustomDebugStringConvertibleP", "birthHeight"]
+- !private ["s28CustomDebugStringConvertibleP", "bornHeight"]
+- !private ["s28CustomDebugStringConvertibleP", "date"]
+- !private ["s28CustomDebugStringConvertibleP", "dismiss"]
+- !private ["s28CustomDebugStringConvertibleP", "endEditing"]
+- !private ["s28CustomDebugStringConvertibleP", "firstName"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
+- !private ["s28CustomDebugStringConvertibleP", "lastName"]
+- !private ["s28CustomDebugStringConvertibleP", "name"]
+- !private ["s28CustomDebugStringConvertibleP", "navigationController"]
+- !private ["s28CustomDebugStringConvertibleP", "persistentContainer"]
+- !private ["s28CustomDebugStringConvertibleP", "popViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "resignFirstResponder"]
+- !private ["s28CustomDebugStringConvertibleP", "save"]
+- !private ["s28CustomDebugStringConvertibleP", "saveChild"]
+- !private ["s28CustomDebugStringConvertibleP", "selectedSegmentIndex"]
+- !private ["s28CustomDebugStringConvertibleP", "sex"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "titleForSegment"]
+- !private ["s28CustomDebugStringConvertibleP", "view"]
+- !private ["s28CustomDebugStringConvertibleP", "viewContext"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s17CustomReflectableP", "date"]
+- !private ["s17CustomReflectableP", "endEditing"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "isEmpty"]
+- !private ["s17CustomReflectableP", "selectedSegmentIndex"]
+- !private ["s17CustomReflectableP", "text"]
+- !private ["s17CustomReflectableP", "titleForSegment"]
+- !private ["s23CustomStringConvertibleP", "Child"]
+- !private ["s23CustomStringConvertibleP", "DOB"]
+- !private ["s23CustomStringConvertibleP", "Double"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "appDelegate"]
+- !private ["s23CustomStringConvertibleP", "bioSex"]
+- !private ["s23CustomStringConvertibleP", "birthDate"]
+- !private ["s23CustomStringConvertibleP", "birthHeight"]
+- !private ["s23CustomStringConvertibleP", "bornHeight"]
+- !private ["s23CustomStringConvertibleP", "date"]
+- !private ["s23CustomStringConvertibleP", "dismiss"]
+- !private ["s23CustomStringConvertibleP", "endEditing"]
+- !private ["s23CustomStringConvertibleP", "firstName"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isEmpty"]
+- !private ["s23CustomStringConvertibleP", "lastName"]
+- !private ["s23CustomStringConvertibleP", "name"]
+- !private ["s23CustomStringConvertibleP", "navigationController"]
+- !private ["s23CustomStringConvertibleP", "persistentContainer"]
+- !private ["s23CustomStringConvertibleP", "popViewController"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "resignFirstResponder"]
+- !private ["s23CustomStringConvertibleP", "save"]
+- !private ["s23CustomStringConvertibleP", "saveChild"]
+- !private ["s23CustomStringConvertibleP", "selectedSegmentIndex"]
+- !private ["s23CustomStringConvertibleP", "sex"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "titleForSegment"]
+- !private ["s23CustomStringConvertibleP", "view"]
+- !private ["s23CustomStringConvertibleP", "viewContext"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["Se", "date"]
+- !private ["Se", "endEditing"]
+- !private ["Se", "init"]
+- !private ["Se", "isEmpty"]
+- !private ["Se", "selectedSegmentIndex"]
+- !private ["Se", "text"]
+- !private ["Se", "titleForSegment"]
+- !private ["Sd", "init"]
+- !private ["SE", "date"]
+- !private ["SE", "endEditing"]
+- !private ["SE", "init"]
+- !private ["SE", "isEmpty"]
+- !private ["SE", "selectedSegmentIndex"]
+- !private ["SE", "text"]
+- !private ["SE", "titleForSegment"]
+- !private ["SQ", "Child"]
+- !private ["SQ", "DOB"]
+- !private ["SQ", "Double"]
+- ["SQ", ""]
+- !private ["SQ", "appDelegate"]
+- !private ["SQ", "bioSex"]
+- !private ["SQ", "birthDate"]
+- !private ["SQ", "birthHeight"]
+- !private ["SQ", "bornHeight"]
+- !private ["SQ", "date"]
+- !private ["SQ", "dismiss"]
+- !private ["SQ", "endEditing"]
+- !private ["SQ", "firstName"]
+- !private ["SQ", "init"]
+- !private ["SQ", "isEmpty"]
+- !private ["SQ", "lastName"]
+- !private ["SQ", "name"]
+- !private ["SQ", "navigationController"]
+- !private ["SQ", "persistentContainer"]
+- !private ["SQ", "popViewController"]
+- !private ["SQ", "print"]
+- !private ["SQ", "resignFirstResponder"]
+- !private ["SQ", "save"]
+- !private ["SQ", "saveChild"]
+- !private ["SQ", "selectedSegmentIndex"]
+- !private ["SQ", "sex"]
+- !private ["SQ", "text"]
+- !private ["SQ", "titleForSegment"]
+- !private ["SQ", "view"]
+- !private ["SQ", "viewContext"]
+- !private ["SQ", "viewDidLoad"]
+- !private ["s5ErrorP", "localizedDescription"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "isEmpty"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "date"]
+- !private ["s23ExpressibleByNilLiteralP", "endEditing"]
+- !private ["s23ExpressibleByNilLiteralP", "selectedSegmentIndex"]
+- !private ["s23ExpressibleByNilLiteralP", "text"]
+- !private ["s23ExpressibleByNilLiteralP", "titleForSegment"]
+- !private ["s32ExpressibleByStringInterpolationP", "isEmpty"]
+- !private ["s26ExpressibleByStringLiteralP", "isEmpty"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "isEmpty"]
+- !private ["SF", "init"]
+- !private ["7SwiftUI7GestureP", "date"]
+- !private ["7SwiftUI7GestureP", "endEditing"]
+- !private ["7SwiftUI7GestureP", "selectedSegmentIndex"]
+- !private ["7SwiftUI7GestureP", "text"]
+- !private ["7SwiftUI7GestureP", "titleForSegment"]
+- !private ["SH", "Child"]
+- !private ["SH", "DOB"]
+- !private ["SH", "Double"]
+- ["SH", ""]
+- !private ["SH", "appDelegate"]
+- !private ["SH", "bioSex"]
+- !private ["SH", "birthDate"]
+- !private ["SH", "birthHeight"]
+- !private ["SH", "bornHeight"]
+- !private ["SH", "date"]
+- !private ["SH", "dismiss"]
+- !private ["SH", "endEditing"]
+- !private ["SH", "firstName"]
+- !private ["SH", "init"]
+- !private ["SH", "isEmpty"]
+- !private ["SH", "lastName"]
+- !private ["SH", "name"]
+- !private ["SH", "navigationController"]
+- !private ["SH", "persistentContainer"]
+- !private ["SH", "popViewController"]
+- !private ["SH", "print"]
+- !private ["SH", "resignFirstResponder"]
+- !private ["SH", "save"]
+- !private ["SH", "saveChild"]
+- !private ["SH", "selectedSegmentIndex"]
+- !private ["SH", "sex"]
+- !private ["SH", "text"]
+- !private ["SH", "titleForSegment"]
+- !private ["SH", "view"]
+- !private ["SH", "viewContext"]
+- !private ["SH", "viewDidLoad"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "isEmpty"]
+- !private ["s10MirrorPathP", "isEmpty"]
+- !private ["So8NSCodingP", "Child"]
+- !private ["So8NSCodingP", "DOB"]
+- !private ["So8NSCodingP", "Double"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "appDelegate"]
+- !private ["So8NSCodingP", "bioSex"]
+- !private ["So8NSCodingP", "bornHeight"]
+- !private ["So8NSCodingP", "date"]
+- !private ["So8NSCodingP", "dismiss"]
+- !private ["So8NSCodingP", "endEditing"]
+- !private ["So8NSCodingP", "firstName"]
+- !private ["So8NSCodingP", "isEmpty"]
+- !private ["So8NSCodingP", "lastName"]
+- !private ["So8NSCodingP", "navigationController"]
+- !private ["So8NSCodingP", "popViewController"]
+- !private ["So8NSCodingP", "print"]
+- !private ["So8NSCodingP", "resignFirstResponder"]
+- !private ["So8NSCodingP", "save"]
+- !private ["So8NSCodingP", "saveChild"]
+- !private ["So8NSCodingP", "selectedSegmentIndex"]
+- !private ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "titleForSegment"]
+- !private ["So8NSCodingP", "view"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So9NSCopyingP", "isEmpty"]
+- !private ["So26NSExtensionRequestHandlingP", "Child"]
+- !private ["So26NSExtensionRequestHandlingP", "DOB"]
+- !private ["So26NSExtensionRequestHandlingP", "Double"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "appDelegate"]
+- !private ["So26NSExtensionRequestHandlingP", "bioSex"]
+- !private ["So26NSExtensionRequestHandlingP", "bornHeight"]
+- !private ["So26NSExtensionRequestHandlingP", "dismiss"]
+- !private ["So26NSExtensionRequestHandlingP", "firstName"]
+- !private ["So26NSExtensionRequestHandlingP", "lastName"]
+- !private ["So26NSExtensionRequestHandlingP", "navigationController"]
+- !private ["So26NSExtensionRequestHandlingP", "popViewController"]
+- !private ["So26NSExtensionRequestHandlingP", "print"]
+- !private ["So26NSExtensionRequestHandlingP", "saveChild"]
+- !private ["So26NSExtensionRequestHandlingP", "view"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- !private ["So20NSFetchRequestResultP", "birthDate"]
+- !private ["So20NSFetchRequestResultP", "birthHeight"]
+- !private ["So20NSFetchRequestResultP", "init"]
+- !private ["So20NSFetchRequestResultP", "name"]
+- !private ["So20NSFetchRequestResultP", "sex"]
+- !private ["So21NSItemProviderReadingP", "isEmpty"]
+- !private ["So21NSItemProviderWritingP", "isEmpty"]
+- !private ["So9NSLockingP", "save"]
+- !private ["So15NSManagedObjectC", "birthDate"]
+- !private ["So15NSManagedObjectC", "birthHeight"]
+- !private ["So15NSManagedObjectC", "init"]
+- !private ["So15NSManagedObjectC", "name"]
+- !private ["So15NSManagedObjectC", "sex"]
+- !private ["So22NSManagedObjectContextC", "save"]
+- !private ["So16NSMutableCopyingP", "isEmpty"]
+- ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "Child"]
+- ["So8NSObjectC", "DOB"]
+- !private ["So8NSObjectC", "Double"]
+- ["So8NSObjectC", "Set"]
+- ["So8NSObjectC", "UIDatePicker"]
+- ["So8NSObjectC", "UIEvent"]
+- ["So8NSObjectC", "UISegmentedControl"]
+- ["So8NSObjectC", "UITextField"]
+- ["So8NSObjectC", "UITouch"]
+- !private ["So8NSObjectC", "appDelegate"]
+- ["So8NSObjectC", "bioSex"]
+- !private ["So8NSObjectC", "birthDate"]
+- !private ["So8NSObjectC", "birthHeight"]
+- ["So8NSObjectC", "bornHeight"]
+- !private ["So8NSObjectC", "date"]
+- !private ["So8NSObjectC", "dismiss"]
+- ["So8NSObjectC", "done"]
+- !private ["So8NSObjectC", "endEditing"]
+- ["So8NSObjectC", "firstName"]
+- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "isEmpty"]
+- ["So8NSObjectC", "lastName"]
+- !private ["So8NSObjectC", "name"]
+- !private ["So8NSObjectC", "navigationController"]
+- !private ["So8NSObjectC", "persistentContainer"]
+- !private ["So8NSObjectC", "popViewController"]
+- !private ["So8NSObjectC", "print"]
+- !private ["So8NSObjectC", "resignFirstResponder"]
+- !private ["So8NSObjectC", "save"]
+- ["So8NSObjectC", "saveButton"]
+- ["So8NSObjectC", "saveChild"]
+- !private ["So8NSObjectC", "selectedSegmentIndex"]
+- !private ["So8NSObjectC", "sex"]
+- !private ["So8NSObjectC", "text"]
+- !private ["So8NSObjectC", "titleForSegment"]
+- ["So8NSObjectC", "touchesBegan"]
+- !private ["So8NSObjectC", "view"]
+- !private ["So8NSObjectC", "viewContext"]
+- ["So8NSObjectC", "viewDidLoad"]
+- !private ["So8NSObjectP", "Child"]
+- !private ["So8NSObjectP", "DOB"]
+- !private ["So8NSObjectP", "Double"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "appDelegate"]
+- !private ["So8NSObjectP", "bioSex"]
+- !private ["So8NSObjectP", "birthDate"]
+- !private ["So8NSObjectP", "birthHeight"]
+- !private ["So8NSObjectP", "bornHeight"]
+- !private ["So8NSObjectP", "date"]
+- !private ["So8NSObjectP", "dismiss"]
+- !private ["So8NSObjectP", "endEditing"]
+- !private ["So8NSObjectP", "firstName"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isEmpty"]
+- !private ["So8NSObjectP", "lastName"]
+- !private ["So8NSObjectP", "name"]
+- !private ["So8NSObjectP", "navigationController"]
+- !private ["So8NSObjectP", "persistentContainer"]
+- !private ["So8NSObjectP", "popViewController"]
+- !private ["So8NSObjectP", "print"]
+- !private ["So8NSObjectP", "resignFirstResponder"]
+- !private ["So8NSObjectP", "save"]
+- !private ["So8NSObjectP", "saveChild"]
+- !private ["So8NSObjectP", "selectedSegmentIndex"]
+- !private ["So8NSObjectP", "sex"]
+- !private ["So8NSObjectP", "text"]
+- !private ["So8NSObjectP", "titleForSegment"]
+- !private ["So8NSObjectP", "view"]
+- !private ["So8NSObjectP", "viewContext"]
+- !private ["So8NSObjectP", "viewDidLoad"]
+- !private ["So21NSPersistentContainerC", "viewContext"]
+- !private ["So14NSSecureCodingP", "isEmpty"]
+- !private ["So8NSStringC", "isEmpty"]
+- ["15BabyMeasurement24NewProfileViewControllerC", "Bool"]
+- !private ["15BabyMeasurement24NewProfileViewControllerC", "Child"]
+- ["15BabyMeasurement24NewProfileViewControllerC", "DOB"]
+- !private ["15BabyMeasurement24NewProfileViewControllerC", "Double"]
+- ["15BabyMeasurement24NewProfileViewControllerC", "Set"]
+- ["15BabyMeasurement24NewProfileViewControllerC", "UIDatePicker"]
+- ["15BabyMeasurement24NewProfileViewControllerC", "UIEvent"]
+- ["15BabyMeasurement24NewProfileViewControllerC", "UISegmentedControl"]
+- ["15BabyMeasurement24NewProfileViewControllerC", "UITextField"]
+- ["15BabyMeasurement24NewProfileViewControllerC", "UITouch"]
+- !private ["15BabyMeasurement24NewProfileViewControllerC", "appDelegate"]
+- ["15BabyMeasurement24NewProfileViewControllerC", "bioSex"]
+- ["15BabyMeasurement24NewProfileViewControllerC", "bornHeight"]
+- ["15BabyMeasurement24NewProfileViewControllerC", "deinit"]
+- !private ["15BabyMeasurement24NewProfileViewControllerC", "dismiss"]
+- ["15BabyMeasurement24NewProfileViewControllerC", "done"]
+- ["15BabyMeasurement24NewProfileViewControllerC", "firstName"]
+- ["15BabyMeasurement24NewProfileViewControllerC", "init"]
+- ["15BabyMeasurement24NewProfileViewControllerC", "lastName"]
+- !private ["15BabyMeasurement24NewProfileViewControllerC", "navigationController"]
+- !private ["15BabyMeasurement24NewProfileViewControllerC", "print"]
+- ["15BabyMeasurement24NewProfileViewControllerC", "saveButton"]
+- ["15BabyMeasurement24NewProfileViewControllerC", "saveChild"]
+- ["15BabyMeasurement24NewProfileViewControllerC", "touchesBegan"]
+- !private ["15BabyMeasurement24NewProfileViewControllerC", "view"]
+- ["15BabyMeasurement24NewProfileViewControllerC", "viewDidLoad"]
+- !private ["Sj", "init"]
+- !private ["7Combine16ObservableObjectP", "birthDate"]
+- !private ["7Combine16ObservableObjectP", "birthHeight"]
+- !private ["7Combine16ObservableObjectP", "init"]
+- !private ["7Combine16ObservableObjectP", "name"]
+- !private ["7Combine16ObservableObjectP", "sex"]
+- !private ["Sq", "date"]
+- !private ["Sq", "endEditing"]
+- !private ["Sq", "selectedSegmentIndex"]
+- !private ["Sq", "text"]
+- !private ["Sq", "titleForSegment"]
+- !private ["Sm", "isEmpty"]
+- !private ["s10SIMDScalarP", "init"]
+- !private ["ST", "isEmpty"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["Sx", "init"]
+- !private ["SS", "isEmpty"]
+- !private ["Sy", "isEmpty"]
+- !private ["s16TextOutputStreamP", "isEmpty"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "isEmpty"]
+- !private ["So29UIAccessibilityIdentificationP", "date"]
+- !private ["So29UIAccessibilityIdentificationP", "endEditing"]
+- !private ["So29UIAccessibilityIdentificationP", "resignFirstResponder"]
+- !private ["So29UIAccessibilityIdentificationP", "selectedSegmentIndex"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So29UIAccessibilityIdentificationP", "titleForSegment"]
+- !private ["So12UIAppearanceP", "date"]
+- !private ["So12UIAppearanceP", "endEditing"]
+- !private ["So12UIAppearanceP", "resignFirstResponder"]
+- !private ["So12UIAppearanceP", "selectedSegmentIndex"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So12UIAppearanceP", "titleForSegment"]
+- !private ["So21UIAppearanceContainerP", "Child"]
+- !private ["So21UIAppearanceContainerP", "DOB"]
+- !private ["So21UIAppearanceContainerP", "Double"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "appDelegate"]
+- !private ["So21UIAppearanceContainerP", "bioSex"]
+- !private ["So21UIAppearanceContainerP", "bornHeight"]
+- !private ["So21UIAppearanceContainerP", "date"]
+- !private ["So21UIAppearanceContainerP", "dismiss"]
+- !private ["So21UIAppearanceContainerP", "endEditing"]
+- !private ["So21UIAppearanceContainerP", "firstName"]
+- !private ["So21UIAppearanceContainerP", "lastName"]
+- !private ["So21UIAppearanceContainerP", "navigationController"]
+- !private ["So21UIAppearanceContainerP", "popViewController"]
+- !private ["So21UIAppearanceContainerP", "print"]
+- !private ["So21UIAppearanceContainerP", "resignFirstResponder"]
+- !private ["So21UIAppearanceContainerP", "saveChild"]
+- !private ["So21UIAppearanceContainerP", "selectedSegmentIndex"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So21UIAppearanceContainerP", "titleForSegment"]
+- !private ["So21UIAppearanceContainerP", "view"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So21UIApplicationDelegateP", "persistentContainer"]
+- !private ["So18UIContentContainerP", "Child"]
+- !private ["So18UIContentContainerP", "DOB"]
+- !private ["So18UIContentContainerP", "Double"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "appDelegate"]
+- !private ["So18UIContentContainerP", "bioSex"]
+- !private ["So18UIContentContainerP", "bornHeight"]
+- !private ["So18UIContentContainerP", "dismiss"]
+- !private ["So18UIContentContainerP", "firstName"]
+- !private ["So18UIContentContainerP", "lastName"]
+- !private ["So18UIContentContainerP", "navigationController"]
+- !private ["So18UIContentContainerP", "popViewController"]
+- !private ["So18UIContentContainerP", "print"]
+- !private ["So18UIContentContainerP", "saveChild"]
+- !private ["So18UIContentContainerP", "view"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "resignFirstResponder"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So9UIControlC", "date"]
+- !private ["So9UIControlC", "resignFirstResponder"]
+- !private ["So9UIControlC", "selectedSegmentIndex"]
+- !private ["So9UIControlC", "text"]
+- !private ["So9UIControlC", "titleForSegment"]
+- !private ["So17UICoordinateSpaceP", "date"]
+- !private ["So17UICoordinateSpaceP", "endEditing"]
+- !private ["So17UICoordinateSpaceP", "resignFirstResponder"]
+- !private ["So17UICoordinateSpaceP", "selectedSegmentIndex"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So17UICoordinateSpaceP", "titleForSegment"]
+- !private ["So12UIDatePickerC", "date"]
+- !private ["So13UIDynamicItemP", "date"]
+- !private ["So13UIDynamicItemP", "endEditing"]
+- !private ["So13UIDynamicItemP", "resignFirstResponder"]
+- !private ["So13UIDynamicItemP", "selectedSegmentIndex"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So13UIDynamicItemP", "titleForSegment"]
+- !private ["So18UIFocusEnvironmentP", "Child"]
+- !private ["So18UIFocusEnvironmentP", "DOB"]
+- !private ["So18UIFocusEnvironmentP", "Double"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "appDelegate"]
+- !private ["So18UIFocusEnvironmentP", "bioSex"]
+- !private ["So18UIFocusEnvironmentP", "bornHeight"]
+- !private ["So18UIFocusEnvironmentP", "date"]
+- !private ["So18UIFocusEnvironmentP", "dismiss"]
+- !private ["So18UIFocusEnvironmentP", "endEditing"]
+- !private ["So18UIFocusEnvironmentP", "firstName"]
+- !private ["So18UIFocusEnvironmentP", "lastName"]
+- !private ["So18UIFocusEnvironmentP", "navigationController"]
+- !private ["So18UIFocusEnvironmentP", "popViewController"]
+- !private ["So18UIFocusEnvironmentP", "print"]
+- !private ["So18UIFocusEnvironmentP", "resignFirstResponder"]
+- !private ["So18UIFocusEnvironmentP", "saveChild"]
+- !private ["So18UIFocusEnvironmentP", "selectedSegmentIndex"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So18UIFocusEnvironmentP", "titleForSegment"]
+- !private ["So18UIFocusEnvironmentP", "view"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So11UIFocusItemP", "date"]
+- !private ["So11UIFocusItemP", "endEditing"]
+- !private ["So11UIFocusItemP", "resignFirstResponder"]
+- !private ["So11UIFocusItemP", "selectedSegmentIndex"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So11UIFocusItemP", "titleForSegment"]
+- !private ["So20UIFocusItemContainerP", "date"]
+- !private ["So20UIFocusItemContainerP", "endEditing"]
+- !private ["So20UIFocusItemContainerP", "resignFirstResponder"]
+- !private ["So20UIFocusItemContainerP", "selectedSegmentIndex"]
+- !private ["So20UIFocusItemContainerP", "text"]
+- !private ["So20UIFocusItemContainerP", "titleForSegment"]
+- !private ["So10UIKeyInputP", "resignFirstResponder"]
+- !private ["So10UIKeyInputP", "text"]
+- !private ["So24UILargeContentViewerItemP", "date"]
+- !private ["So24UILargeContentViewerItemP", "endEditing"]
+- !private ["So24UILargeContentViewerItemP", "resignFirstResponder"]
+- !private ["So24UILargeContentViewerItemP", "selectedSegmentIndex"]
+- !private ["So24UILargeContentViewerItemP", "text"]
+- !private ["So24UILargeContentViewerItemP", "titleForSegment"]
+- !private ["So22UINavigationControllerC", "popViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "Child"]
+- !private ["So30UIPasteConfigurationSupportingP", "DOB"]
+- !private ["So30UIPasteConfigurationSupportingP", "Double"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "appDelegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "bioSex"]
+- !private ["So30UIPasteConfigurationSupportingP", "bornHeight"]
+- !private ["So30UIPasteConfigurationSupportingP", "date"]
+- !private ["So30UIPasteConfigurationSupportingP", "dismiss"]
+- !private ["So30UIPasteConfigurationSupportingP", "endEditing"]
+- !private ["So30UIPasteConfigurationSupportingP", "firstName"]
+- !private ["So30UIPasteConfigurationSupportingP", "lastName"]
+- !private ["So30UIPasteConfigurationSupportingP", "navigationController"]
+- !private ["So30UIPasteConfigurationSupportingP", "persistentContainer"]
+- !private ["So30UIPasteConfigurationSupportingP", "popViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "print"]
+- !private ["So30UIPasteConfigurationSupportingP", "resignFirstResponder"]
+- !private ["So30UIPasteConfigurationSupportingP", "saveChild"]
+- !private ["So30UIPasteConfigurationSupportingP", "selectedSegmentIndex"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "titleForSegment"]
+- !private ["So30UIPasteConfigurationSupportingP", "view"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- ["So11UIResponderC", "Bool"]
+- !private ["So11UIResponderC", "Child"]
+- ["So11UIResponderC", "DOB"]
+- !private ["So11UIResponderC", "Double"]
+- ["So11UIResponderC", "Set"]
+- ["So11UIResponderC", "UIDatePicker"]
+- ["So11UIResponderC", "UIEvent"]
+- ["So11UIResponderC", "UISegmentedControl"]
+- ["So11UIResponderC", "UITextField"]
+- ["So11UIResponderC", "UITouch"]
+- !private ["So11UIResponderC", "appDelegate"]
+- ["So11UIResponderC", "bioSex"]
+- ["So11UIResponderC", "bornHeight"]
+- !private ["So11UIResponderC", "date"]
+- !private ["So11UIResponderC", "dismiss"]
+- ["So11UIResponderC", "done"]
+- !private ["So11UIResponderC", "endEditing"]
+- ["So11UIResponderC", "firstName"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "lastName"]
+- !private ["So11UIResponderC", "navigationController"]
+- !private ["So11UIResponderC", "persistentContainer"]
+- !private ["So11UIResponderC", "popViewController"]
+- !private ["So11UIResponderC", "print"]
+- !private ["So11UIResponderC", "resignFirstResponder"]
+- ["So11UIResponderC", "saveButton"]
+- ["So11UIResponderC", "saveChild"]
+- !private ["So11UIResponderC", "selectedSegmentIndex"]
+- !private ["So11UIResponderC", "text"]
+- !private ["So11UIResponderC", "titleForSegment"]
+- ["So11UIResponderC", "touchesBegan"]
+- !private ["So11UIResponderC", "view"]
+- ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "Child"]
+- !private ["So30UIResponderStandardEditActionsP", "DOB"]
+- !private ["So30UIResponderStandardEditActionsP", "Double"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "appDelegate"]
+- !private ["So30UIResponderStandardEditActionsP", "bioSex"]
+- !private ["So30UIResponderStandardEditActionsP", "bornHeight"]
+- !private ["So30UIResponderStandardEditActionsP", "date"]
+- !private ["So30UIResponderStandardEditActionsP", "dismiss"]
+- !private ["So30UIResponderStandardEditActionsP", "endEditing"]
+- !private ["So30UIResponderStandardEditActionsP", "firstName"]
+- !private ["So30UIResponderStandardEditActionsP", "lastName"]
+- !private ["So30UIResponderStandardEditActionsP", "navigationController"]
+- !private ["So30UIResponderStandardEditActionsP", "persistentContainer"]
+- !private ["So30UIResponderStandardEditActionsP", "popViewController"]
+- !private ["So30UIResponderStandardEditActionsP", "print"]
+- !private ["So30UIResponderStandardEditActionsP", "resignFirstResponder"]
+- !private ["So30UIResponderStandardEditActionsP", "saveChild"]
+- !private ["So30UIResponderStandardEditActionsP", "selectedSegmentIndex"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "titleForSegment"]
+- !private ["So30UIResponderStandardEditActionsP", "view"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So18UISegmentedControlC", "selectedSegmentIndex"]
+- !private ["So18UISegmentedControlC", "titleForSegment"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "selectedSegmentIndex"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "titleForSegment"]
+- !private ["So16UIStateRestoringP", "Child"]
+- !private ["So16UIStateRestoringP", "DOB"]
+- !private ["So16UIStateRestoringP", "Double"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "appDelegate"]
+- !private ["So16UIStateRestoringP", "bioSex"]
+- !private ["So16UIStateRestoringP", "bornHeight"]
+- !private ["So16UIStateRestoringP", "dismiss"]
+- !private ["So16UIStateRestoringP", "firstName"]
+- !private ["So16UIStateRestoringP", "lastName"]
+- !private ["So16UIStateRestoringP", "navigationController"]
+- !private ["So16UIStateRestoringP", "popViewController"]
+- !private ["So16UIStateRestoringP", "print"]
+- !private ["So16UIStateRestoringP", "saveChild"]
+- !private ["So16UIStateRestoringP", "view"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So15UITextDraggableP", "resignFirstResponder"]
+- !private ["So15UITextDraggableP", "text"]
+- !private ["So15UITextDroppableP", "resignFirstResponder"]
+- !private ["So15UITextDroppableP", "text"]
+- !private ["So11UITextFieldC", "resignFirstResponder"]
+- !private ["So11UITextFieldC", "text"]
+- !private ["So11UITextInputP", "resignFirstResponder"]
+- !private ["So11UITextInputP", "text"]
+- !private ["So17UITextInputTraitsP", "resignFirstResponder"]
+- !private ["So17UITextInputTraitsP", "text"]
+- !private ["So34UITextPasteConfigurationSupportingP", "resignFirstResponder"]
+- !private ["So34UITextPasteConfigurationSupportingP", "text"]
+- !private ["So18UITraitEnvironmentP", "Child"]
+- !private ["So18UITraitEnvironmentP", "DOB"]
+- !private ["So18UITraitEnvironmentP", "Double"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "appDelegate"]
+- !private ["So18UITraitEnvironmentP", "bioSex"]
+- !private ["So18UITraitEnvironmentP", "bornHeight"]
+- !private ["So18UITraitEnvironmentP", "date"]
+- !private ["So18UITraitEnvironmentP", "dismiss"]
+- !private ["So18UITraitEnvironmentP", "endEditing"]
+- !private ["So18UITraitEnvironmentP", "firstName"]
+- !private ["So18UITraitEnvironmentP", "lastName"]
+- !private ["So18UITraitEnvironmentP", "navigationController"]
+- !private ["So18UITraitEnvironmentP", "popViewController"]
+- !private ["So18UITraitEnvironmentP", "print"]
+- !private ["So18UITraitEnvironmentP", "resignFirstResponder"]
+- !private ["So18UITraitEnvironmentP", "saveChild"]
+- !private ["So18UITraitEnvironmentP", "selectedSegmentIndex"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So18UITraitEnvironmentP", "titleForSegment"]
+- !private ["So18UITraitEnvironmentP", "view"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So23UIUserActivityRestoringP", "Child"]
+- !private ["So23UIUserActivityRestoringP", "DOB"]
+- !private ["So23UIUserActivityRestoringP", "Double"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "appDelegate"]
+- !private ["So23UIUserActivityRestoringP", "bioSex"]
+- !private ["So23UIUserActivityRestoringP", "bornHeight"]
+- !private ["So23UIUserActivityRestoringP", "date"]
+- !private ["So23UIUserActivityRestoringP", "dismiss"]
+- !private ["So23UIUserActivityRestoringP", "endEditing"]
+- !private ["So23UIUserActivityRestoringP", "firstName"]
+- !private ["So23UIUserActivityRestoringP", "lastName"]
+- !private ["So23UIUserActivityRestoringP", "navigationController"]
+- !private ["So23UIUserActivityRestoringP", "persistentContainer"]
+- !private ["So23UIUserActivityRestoringP", "popViewController"]
+- !private ["So23UIUserActivityRestoringP", "print"]
+- !private ["So23UIUserActivityRestoringP", "resignFirstResponder"]
+- !private ["So23UIUserActivityRestoringP", "saveChild"]
+- !private ["So23UIUserActivityRestoringP", "selectedSegmentIndex"]
+- !private ["So23UIUserActivityRestoringP", "text"]
+- !private ["So23UIUserActivityRestoringP", "titleForSegment"]
+- !private ["So23UIUserActivityRestoringP", "view"]
+- !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
+- !private ["So6UIViewC", "date"]
+- !private ["So6UIViewC", "endEditing"]
+- !private ["So6UIViewC", "resignFirstResponder"]
+- !private ["So6UIViewC", "selectedSegmentIndex"]
+- !private ["So6UIViewC", "text"]
+- !private ["So6UIViewC", "titleForSegment"]
+- ["So16UIViewControllerC", "Bool"]
+- !private ["So16UIViewControllerC", "Child"]
+- ["So16UIViewControllerC", "DOB"]
+- !private ["So16UIViewControllerC", "Double"]
+- ["So16UIViewControllerC", "Set"]
+- ["So16UIViewControllerC", "UIDatePicker"]
+- ["So16UIViewControllerC", "UIEvent"]
+- ["So16UIViewControllerC", "UISegmentedControl"]
+- ["So16UIViewControllerC", "UITextField"]
+- ["So16UIViewControllerC", "UITouch"]
+- ["So16UIViewControllerC", ""]
+- !private ["So16UIViewControllerC", "appDelegate"]
+- ["So16UIViewControllerC", "bioSex"]
+- ["So16UIViewControllerC", "bornHeight"]
+- !private ["So16UIViewControllerC", "dismiss"]
+- ["So16UIViewControllerC", "done"]
+- ["So16UIViewControllerC", "firstName"]
+- ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "lastName"]
+- !private ["So16UIViewControllerC", "navigationController"]
+- !private ["So16UIViewControllerC", "popViewController"]
+- !private ["So16UIViewControllerC", "print"]
+- ["So16UIViewControllerC", "saveButton"]
+- ["So16UIViewControllerC", "saveChild"]
+- ["So16UIViewControllerC", "touchesBegan"]
+- !private ["So16UIViewControllerC", "view"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- !private ["7SwiftUI16VectorArithmeticP", "init"]
+- !private ["7SwiftUI4ViewP", "date"]
+- !private ["7SwiftUI4ViewP", "endEditing"]
+- !private ["7SwiftUI4ViewP", "selectedSegmentIndex"]
+- !private ["7SwiftUI4ViewP", "text"]
+- !private ["7SwiftUI4ViewP", "titleForSegment"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "isEmpty"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "isEmpty"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "isEmpty"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "isEmpty"]
+- !private ["7SwiftUI18_FormatSpecifiableP", "init"]
+- !private ["s19_HasContiguousBytesP", "isEmpty"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "isEmpty"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Child"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "DOB"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Double"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "appDelegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "bioSex"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "birthDate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "birthHeight"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "bornHeight"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "date"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "endEditing"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "firstName"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isEmpty"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "lastName"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "name"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "persistentContainer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "popViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "resignFirstResponder"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "save"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "saveChild"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "selectedSegmentIndex"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sex"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "titleForSegment"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewContext"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Child"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "DOB"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Double"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "appDelegate"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "bioSex"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "birthDate"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "birthHeight"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "bornHeight"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "date"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dismiss"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "endEditing"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "firstName"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "isEmpty"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "lastName"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "name"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "navigationController"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "persistentContainer"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "popViewController"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "resignFirstResponder"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "save"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "saveChild"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "selectedSegmentIndex"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sex"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "text"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "titleForSegment"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "view"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewContext"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewDidLoad"]
+- !private ["s21_ObjectiveCBridgeableP", "date"]
+- !private ["s21_ObjectiveCBridgeableP", "endEditing"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
+- !private ["s21_ObjectiveCBridgeableP", "selectedSegmentIndex"]
+- !private ["s21_ObjectiveCBridgeableP", "text"]
+- !private ["s21_ObjectiveCBridgeableP", "titleForSegment"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "date"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "endEditing"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "resignFirstResponder"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "selectedSegmentIndex"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "titleForSegment"]
+depends-nominal:
+- !private "s18AdditiveArithmeticP"
+- !private "15BabyMeasurement11AppDelegateC"
+- !private "SK"
+- !private "SB"
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- !private "15BabyMeasurement5ChildC"
+- !private "Sl"
+- !private "SL"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "Sd"
+- !private "SE"
+- "SQ"
+- !private "s5ErrorP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "SF"
+- !private "7SwiftUI7GestureP"
+- "SH"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So26NSExtensionRequestHandlingP"
+- !private "So20NSFetchRequestResultP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So9NSLockingP"
+- !private "So15NSManagedObjectC"
+- !private "So22NSManagedObjectContextC"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So21NSPersistentContainerC"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- "15BabyMeasurement24NewProfileViewControllerC"
+- !private "Sj"
+- !private "7Combine16ObservableObjectP"
+- !private "Sq"
+- !private "Sm"
+- !private "s10SIMDScalarP"
+- !private "ST"
+- !private "s13SignedNumericP"
+- !private "Sx"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- !private "So21UIApplicationDelegateP"
+- "So18UIContentContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So9UIControlC"
+- !private "So17UICoordinateSpaceP"
+- !private "So12UIDatePickerC"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So10UIKeyInputP"
+- !private "So24UILargeContentViewerItemP"
+- !private "So22UINavigationControllerC"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- !private "So18UISegmentedControlC"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- "So16UIStateRestoringP"
+- !private "So15UITextDraggableP"
+- !private "So15UITextDroppableP"
+- !private "So11UITextFieldC"
+- !private "So11UITextInputP"
+- !private "So17UITextInputTraitsP"
+- !private "So34UITextPasteConfigurationSupportingP"
+- "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- !private "7SwiftUI16VectorArithmeticP"
+- !private "7SwiftUI4ViewP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "7SwiftUI18_FormatSpecifiableP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s38__DefaultCustomPlaygroundQuickLookableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreMIDI.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ModelIO.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreMedia.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreData.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/simd.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/AVFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreAudio.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/os.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/GLKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ARKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SceneKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SpriteKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/user171419/Documents/babyMeasurement/BabyMeasurement-clrtyqspcnhcwghjituaqyvyycwe/Build/Products/Debug-iphonesimulator/Charts/Charts.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/user171419/Documents/babyMeasurement/BabyMeasurement-clrtyqspcnhcwghjituaqyvyycwe/Build/Products/Debug-iphonesimulator/Charts/Charts-umbrella.h"
+- "/Users/user171419/Documents/babyMeasurement/BabyMeasurement-clrtyqspcnhcwghjituaqyvyycwe/Build/Products/Debug-iphonesimulator/Charts/Swift Compatibility Header/Charts-Swift.h"
+- "/Users/user171419/Documents/babyMeasurement/BabyMeasurement-clrtyqspcnhcwghjituaqyvyycwe/Build/Products/Debug-iphonesimulator/Charts/Charts.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/QuickLook.framework/Headers/QuickLook.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Headers/CoreAudioTypes.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/os.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "1d7305b14bb51ade3b8c0bb2a6c378cf"

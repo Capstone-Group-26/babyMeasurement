@@ -1,0 +1,12 @@
+module Charts {
+  umbrella header "Charts-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+
+module Charts.Swift {
+  header "/Users/user171419/Documents/babyMeasurement/BabyMeasurement-clrtyqspcnhcwghjituaqyvyycwe/Build/Products/Debug-iphonesimulator/Charts/Swift Compatibility Header/Charts-Swift.h"
+  requires objc
+}

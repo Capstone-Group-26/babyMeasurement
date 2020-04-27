@@ -1,0 +1,1 @@
+{"object": {"dependencies": [{"basedOn": null, "packageRef": {"identity": "chartview", "kind": "remote", "name": "SwiftUICharts", "path": "https://github.com/AppPear/ChartView"}, "state": {"checkoutState": {"branch": null, "revision": "04989ad159380290a74729dbce1d39d64b893ab2", "version": "1.4.9"}, "name": "checkout"}, "subpath": "ChartView"}]}, "version": 3}
