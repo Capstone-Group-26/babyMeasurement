@@ -10,7 +10,7 @@
         <!--NewProfile-->
         <scene sceneID="FaM-1G-noT">
             <objects>
-                <viewController title="NewProfile" id="YD7-QS-xxw" customClass="NewProfileViewController" customModule="test2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="NewProfile" id="YD7-QS-xxw" customClass="NewProfileViewController" customModule="BabyMeasurement" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u5R-4M-9R0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -130,7 +130,7 @@
                                     <action selector="BioSex:" destination="mBb-u7-ft0" eventType="valueChanged" id="jpR-8t-e25"/>
                                 </connections>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27a-Ms-hdG" customClass="MenuSmallFont" customModule="test2" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27a-Ms-hdG" customClass="MenuSmallFont" customModule="BabyMeasurement" customModuleProvider="target">
                                 <rect key="frame" x="149.5" y="770" width="115" height="52"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -211,7 +211,7 @@
         <!--ARView Scene-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="ARView Scene" id="BYZ-38-t0r" customClass="ARViewController" customModule="test2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ARView Scene" id="BYZ-38-t0r" customClass="ARViewController" customModule="BabyMeasurement" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="ARSCNView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -320,7 +320,7 @@
         <!--Information-->
         <scene sceneID="Bks-LN-hVh">
             <objects>
-                <viewController id="VCk-YZ-MbA" customClass="InformationViewController" customModule="test2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VCk-YZ-MbA" customClass="InformationViewController" customModule="BabyMeasurement" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MRc-Vf-0yU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -328,15 +328,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fx2-tj-0mv">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Grown Since Birth" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5S-AZ-bY7">
-                                        <rect key="frame" x="9" y="543" width="398" height="124"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="124" id="I0v-t8-Apt"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="38"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMZ-yU-Yzb">
                                         <rect key="frame" x="96" y="74" width="310" height="64"/>
                                         <constraints>
@@ -357,7 +348,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fXk-3e-Dcm">
-                                        <rect key="frame" x="37" y="480" width="341" height="32"/>
+                                        <rect key="frame" x="39" y="521" width="341" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="31" id="OXT-NX-ab4"/>
                                         </constraints>
@@ -376,14 +367,15 @@
                                     <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sgK-qM-5Ux">
                                         <rect key="frame" x="1" y="256" width="414" height="216"/>
                                     </pickerView>
-                                    <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uw5-lw-eDM">
-                                        <rect key="frame" x="37" y="732" width="341" height="34"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Grown Since Birth" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5S-AZ-bY7">
+                                        <rect key="frame" x="9" y="591" width="398" height="124"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="34" id="3SE-Lj-LDS"/>
+                                            <constraint firstAttribute="height" constant="124" id="I0v-t8-Apt"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
+                                        <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.82737809419999997" green="0.82749778029999999" blue="0.82735186819999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -394,18 +386,14 @@
                                     <constraint firstItem="fXk-3e-Dcm" firstAttribute="centerX" secondItem="Fx2-tj-0mv" secondAttribute="centerX" id="8ir-Tg-Lke"/>
                                     <constraint firstItem="Xsb-Wg-LYr" firstAttribute="centerY" secondItem="IMZ-yU-Yzb" secondAttribute="centerY" id="CaN-TX-toE"/>
                                     <constraint firstItem="Xsb-Wg-LYr" firstAttribute="leading" secondItem="DbF-l9-lFm" secondAttribute="leading" id="Cd6-ei-Hef"/>
-                                    <constraint firstItem="fXk-3e-Dcm" firstAttribute="leading" secondItem="uw5-lw-eDM" secondAttribute="leading" id="I82-1Y-LMm"/>
                                     <constraint firstItem="sgK-qM-5Ux" firstAttribute="top" secondItem="DbF-l9-lFm" secondAttribute="bottom" constant="60" id="Ioe-tg-jCp"/>
-                                    <constraint firstItem="uw5-lw-eDM" firstAttribute="bottom" secondItem="Fx2-tj-0mv" secondAttribute="bottomMargin" id="MGy-DV-lDp"/>
                                     <constraint firstItem="fXk-3e-Dcm" firstAttribute="centerX" secondItem="P5S-AZ-bY7" secondAttribute="centerX" id="UDS-Nz-tmi"/>
                                     <constraint firstItem="P5S-AZ-bY7" firstAttribute="leading" secondItem="Fx2-tj-0mv" secondAttribute="leading" constant="9" id="Via-EY-1wM"/>
                                     <constraint firstItem="P5S-AZ-bY7" firstAttribute="top" secondItem="fXk-3e-Dcm" secondAttribute="bottom" constant="32" id="Xii-D1-2LN"/>
-                                    <constraint firstItem="fXk-3e-Dcm" firstAttribute="trailing" secondItem="uw5-lw-eDM" secondAttribute="trailing" id="ZYE-Ew-Ecx"/>
                                     <constraint firstItem="fXk-3e-Dcm" firstAttribute="top" secondItem="sgK-qM-5Ux" secondAttribute="bottom" constant="8" id="azv-Ng-U9A"/>
                                     <constraint firstItem="DbF-l9-lFm" firstAttribute="leading" secondItem="fXk-3e-Dcm" secondAttribute="leading" id="dBU-Od-R1z"/>
                                     <constraint firstItem="sgK-qM-5Ux" firstAttribute="leading" secondItem="Fx2-tj-0mv" secondAttribute="leading" constant="1" id="ejP-Dk-T1T"/>
                                     <constraint firstItem="sgK-qM-5Ux" firstAttribute="centerX" secondItem="fXk-3e-Dcm" secondAttribute="centerX" id="fM6-rz-Jf8"/>
-                                    <constraint firstItem="uw5-lw-eDM" firstAttribute="top" secondItem="P5S-AZ-bY7" secondAttribute="bottom" constant="65" id="hx5-6n-qhc"/>
                                     <constraint firstItem="IMZ-yU-Yzb" firstAttribute="trailing" secondItem="Fx2-tj-0mv" secondAttribute="trailingMargin" id="lCs-Ao-nLz"/>
                                     <constraint firstItem="DbF-l9-lFm" firstAttribute="top" secondItem="Xsb-Wg-LYr" secondAttribute="bottom" constant="30" id="tDx-Ry-4wG"/>
                                     <constraint firstItem="DbF-l9-lFm" firstAttribute="top" secondItem="IMZ-yU-Yzb" secondAttribute="bottom" constant="53" id="xtk-Lu-aKe"/>
@@ -428,7 +416,6 @@
                         <outlet property="dataSelector" destination="fXk-3e-Dcm" id="Prz-JJ-XyH"/>
                         <outlet property="nameLabel" destination="IMZ-yU-Yzb" id="itv-sO-soF"/>
                         <outlet property="picker" destination="sgK-qM-5Ux" id="9oH-P6-g0q"/>
-                        <outlet property="textView" destination="uw5-lw-eDM" id="Yyv-5i-jYb"/>
                         <outlet property="weeksOldLabel" destination="DbF-l9-lFm" id="foy-xz-84y"/>
                     </connections>
                 </viewController>
@@ -439,7 +426,7 @@
         <!--Line Chart View Controller-->
         <scene sceneID="xoz-9n-DOQ">
             <objects>
-                <viewController id="2xa-bK-UKN" customClass="LineChartViewController" customModule="test2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2xa-bK-UKN" customClass="LineChartViewController" customModule="BabyMeasurement" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uOP-AF-sFD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -486,18 +473,18 @@
         <!--Baby Body Measurement-->
         <scene sceneID="u4n-Av-QTC">
             <objects>
-                <viewController storyboardIdentifier="Home" id="WbZ-Je-VXl" customClass="ViewController" customModule="test2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" id="WbZ-Je-VXl" customClass="ViewController" customModule="BabyMeasurement" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5m3-X5-ePN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BgC-So-uxm" customClass="PickerView" customModule="test2" customModuleProvider="target">
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BgC-So-uxm" customClass="PickerView" customModule="BabyMeasurement" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="265" width="414" height="216"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="v7h-Df-pZw"/>
                                 </constraints>
                             </pickerView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3RT-Nr-9zd" customClass="MenuLargeFont" customModule="test2" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3RT-Nr-9zd" customClass="MenuLargeFont" customModule="BabyMeasurement" customModuleProvider="target">
                                 <rect key="frame" x="25" y="158" width="364" height="87"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -508,7 +495,7 @@
                                     <segue destination="YD7-QS-xxw" kind="show" id="mX2-Pu-B5x"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxt-zo-XPm" customClass="MenuLargeFont" customModule="test2" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxt-zo-XPm" customClass="MenuLargeFont" customModule="BabyMeasurement" customModuleProvider="target">
                                 <rect key="frame" x="25" y="739" width="364" height="93"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -519,7 +506,7 @@
                                     <segue destination="VCk-YZ-MbA" kind="show" animates="NO" id="UYq-Vr-leQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6T-CV-toO" customClass="MenuLargeFont" customModule="test2" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6T-CV-toO" customClass="MenuLargeFont" customModule="BabyMeasurement" customModuleProvider="target">
                                 <rect key="frame" x="25" y="501" width="364" height="99"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -530,7 +517,7 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="VV2-ZM-mZU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKf-w2-lQS" customClass="MenuLargeFont" customModule="test2" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKf-w2-lQS" customClass="MenuLargeFont" customModule="BabyMeasurement" customModuleProvider="target">
                                 <rect key="frame" x="25" y="620" width="364" height="99"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>

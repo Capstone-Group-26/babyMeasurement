@@ -27,16 +27,13 @@ class InformationViewController: UIViewController, UIPickerViewDelegate, UIPicke
     @IBOutlet weak var avatarImage: UIImageView!
     
     @IBOutlet weak var dataSelector: UISegmentedControl!
-    
-    @IBOutlet weak var textView: UITextField!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         picker.delegate = self
         picker.dataSource = self
-        let attributedString = NSMutableAttributedString(string: "World Health Organization Child Standards")
-        attributedString.addAttribute(.link, value: "https://www.who.int/childgrowth/standards/en/", range: NSRange(location: 19, length: 55))
-        textView.attributedText = attributedString
+        NotificationCenter.default.addObserver(self, selector: "OnAppBecameActive", name: UIApplication.didBecomeActiveNotification, object: nil)
         
         bornHeight = recievedChild?.birthHeight ?? 0.0
         // By default, select the most recent measurement
@@ -63,9 +60,8 @@ class InformationViewController: UIViewController, UIPickerViewDelegate, UIPicke
         }
     }
     
-    func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool{
-        UIApplication.shared.open(URL)
-        return false
+    func OnAppBecameActive(){
+        setText()
     }
     
     func setText(){
