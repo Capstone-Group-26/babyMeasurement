@@ -33,7 +33,9 @@ class InformationViewController: UIViewController, UIPickerViewDelegate, UIPicke
         super.viewDidLoad()
         picker.delegate = self
         picker.dataSource = self
-        NotificationCenter.default.addObserver(self, selector: "OnAppBecameActive", name: UIApplication.didBecomeActiveNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: Selector(("OnAppBecameActive")), name: UIApplication.didBecomeActiveNotification, object: nil)
+        
+        dataSelector.addTarget(self, action: "setText:", for:.touchUpInside)
         
         bornHeight = recievedChild?.birthHeight ?? 0.0
         // By default, select the most recent measurement
@@ -50,11 +52,13 @@ class InformationViewController: UIViewController, UIPickerViewDelegate, UIPicke
             else{
                 avatarImage.image = UIImage(named: "femaleSymbol")
             }
-            avatarImage.layer.borderWidth = 2
+            //avatarImage.layer.borderWidth = 2
             avatarImage.layer.masksToBounds = false
-            avatarImage.layer.borderColor = UIColor.black.cgColor
+            //avatarImage.layer.borderColor = UIColor.black.cgColor
             avatarImage.layer.cornerRadius = avatarImage.frame.height/2
             avatarImage.clipsToBounds = true
+            
+            nameLabel.text = recievedChild?.name
         // Set values of text fields
         setText()
         }
