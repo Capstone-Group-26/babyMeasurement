@@ -29,9 +29,6 @@ class ViewController: UIViewController{
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         callDelegates()
-//        if(currentChild?.measurements?.count == 0){
-//            chartButton.buttonType = MenuSmallFont
-//        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
