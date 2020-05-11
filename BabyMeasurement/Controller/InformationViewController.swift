@@ -71,10 +71,7 @@ class InformationViewController: UIViewController, UIPickerViewDelegate, UIPicke
             else{
                 avatarImage.image = UIImage(named: "femaleSymbol")
             }
-            //avatarImage.layer.borderWidth = 2
             avatarImage.layer.masksToBounds = false
-            //avatarImage.layer.borderColor = UIColor.black.cgColor
-            //avatarImage.layer.cornerRadius = avatarImage.frame.height/2
             avatarImage.clipsToBounds = true
             
             nameLabel.text = recievedChild?.name

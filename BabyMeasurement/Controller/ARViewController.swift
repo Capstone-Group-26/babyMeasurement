@@ -77,6 +77,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         
         // Set the view's delegate
         sceneView.delegate = self
+        // Uncomment to turn on feature points for debugging
 //        sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
         
     }
